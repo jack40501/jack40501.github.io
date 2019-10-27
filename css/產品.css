@@ -1,7 +1,7 @@
 .a2 {
-    background: #fff;
+    
     width: 100%;
-    height: 1100px;
+    height: 1400px;
     padding: 30px;
 }
 
@@ -11,24 +11,17 @@
     color: #000;
 }
 
-.cake span {
-    font-family: "Arial Black";
-    font-size: 28px;
-    color: #E48427;
-}
-
-.蛋糕介紹 span {
-   color: #5F93CF;
-   font-size: 20px;
-   font-family: "華康粗圓體";
-}
-
 .a2font span {
     font-family: "Arial Black";
     font-size: 25px;
     color: #E48427;
 }
-
+.title {
+    background: linear-gradient(to right, #f1ae7a 0%, #ffffff 60%);
+    padding: 20px 10px;
+    width: 80%;
+    left: 40px;
+}
 .分隔線 {
     background: #000;
     position: relative;
@@ -37,7 +30,8 @@
     height: 3px;
 }
 
-.蛋糕介紹 {
+
+.樣品介紹 {
     float: left;
     font-size: 15px;
     color: #613F00;
@@ -47,32 +41,33 @@
     text-align: center;
 }
 
-.價格1 {
-    float: right;
-    color: red;
-    vertical-align: middle;
-    padding: 0px;
-    font-size: 15px;
+.樣品介紹 span {
+   color: #5F93CF;
+   font-size: 20px;
+   font-family: "華康粗圓體";
 }
+
+.樣品圖 {
+    vertical-align: middle;
+    float: middle;
+    padding: 0px;
+}
+
+
+
 
 .cake1 {
     vertical-align: baseline;
     padding: 0px 5%;
     float: left;
 }
-
-.尺寸 {
+.糕點1{
+      vertical-align: baseline;
+    padding: 0px 5%;
     float: left;
-    font-size: 15px;
-    vertical-align: middle;
-    padding: 0px;
 }
 
-.蛋糕圖 {
-    vertical-align: middle;
-    float: middle;
-    padding: 0px;
-}
+
 
 .cake {
     overflow: hidden;
@@ -81,6 +76,27 @@
     font-size: 40px;
     color: #000;
 }
+.糕點 {
+    overflow: hidden;
+    height: 800px;
+    font-family: "華康新特圓體(P)";
+    font-size: 40px;
+    color: #000;
+}
+
+
+.cake span {
+    font-family: "Arial Black";
+    font-size: 28px;
+    color: #E48427;
+}
+.糕點 span {
+    font-family: "Arial Black";
+    font-size: 28px;
+    color: #E48427;
+}
+
+
 
 .cake img {
     transform: scale(0.9, 0.9);
@@ -89,10 +105,24 @@
     max-height: 180px;
 }
 
+.糕點 img {
+    transform: scale(0.9, 0.9);
+    transition: all 1s ease-out;
+     width: 180px;
+    max-height: 180px;
+}
+
+
 .cake img:hover {
     transform: scale(1.2, 1.2);
     border: 1px solid #4d4d4d;
 }
+.糕點 img:hover {
+    transform: scale(1.2, 1.2);
+    border: 1px solid #4d4d4d;
+}
+
+
 
 .cake1 img {
     float: left;
@@ -101,47 +131,24 @@
     height: 250px;
 }
 
-.糕點 {
-    overflow: hidden;
-    width: 600px;
-    height: 350px;
-    padding: 20px 0px 0px 0px;
-}
-
-.糕點 img {
-    transform: scale(0.9, 0.9);
-    transition: all 1s ease-out;
-}
-
-.糕點 img:hover {
-    transform: scale(1.2, 1.2);
-    border: 1px solid #4d4d4d;
-}
-
-.糕點1 img {
-    float: left;
+.糕點1 img{
+      float: left;
     padding: 20px;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 250px;
 }
 
-.糕點2 img {
+
+.價格{
+    float: right;
+    color: red;
+    vertical-align: middle;
+    padding: 0px;
+    font-size: 15px;
+}
+.尺寸 {
     float: left;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.糕點3 img {
-    float: left;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.title {
-    background: linear-gradient(to right, #f1ae7a 0%, #ffffff 60%);
-    padding: 20px 10px;
-    width: 80%;
-    left: 40px;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 0px;
 }

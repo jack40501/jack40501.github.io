@@ -1,6 +1,7 @@
 body {
     margin: 0px auto;
     overflow-x: hidden;
+    background: url(../img/素材/背景.png) repeat;
 }
 
 html body {
