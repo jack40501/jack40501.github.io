@@ -161,7 +161,7 @@ html body {
     top: -120px;
     z-index: 6;
 }
-@media sceen (m-width:1500px){
+@media sceen (max-width:1500px){
     .框二 {
     height: 800px;
         .框 {
