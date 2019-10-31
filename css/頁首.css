@@ -161,11 +161,3 @@ html body {
     top: -120px;
     z-index: 6;
 }
-@media screen (max-width:1500px){
-    .框二 {
-    height: 800px;
-    }
-        .框 {
-    height: 800px;
-}
-    }

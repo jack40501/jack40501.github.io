@@ -1,0 +1,53 @@
+@media screen and (min-width:1200px) and (max-width: 1399px){
+	.框二{
+		height:950px;
+	}
+	.框{
+		height: 950px;
+	}
+	.欄圖{
+		width: 600px;
+		height: 400px;
+	}
+	
+}
+@media screen and (min-width:1099px) and (max-width: 1199px){
+	.框二{
+		height:800px;
+	}
+	.框{
+		height: 800px;
+	}
+	
+	
+}
+@media screen and (min-width:1600px){
+
+.欄圖{
+		width: 1100px;
+		height: 800px;
+	}
+
+
+.a1{
+	height: 1300px;
+}
+.框二{
+		height:1200px;
+	}
+	.框{
+		height: 1200px;
+	}
+}
+@media screen and (min-width:1400px) and (max-width: 1599px){
+
+.欄圖{
+		width: 900px;
+		height: 600px;
+	}
+
+
+.a1{
+	height: 1000px;
+}
+}

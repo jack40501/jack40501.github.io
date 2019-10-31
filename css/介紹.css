@@ -8,11 +8,12 @@
     font-family: "標楷體";
     font-size: 20px;
     color: #000;
-    float: left;
+    float:left;
 }
 
 .map{
     float: left;
+
 }
 .a1 {
    
@@ -39,4 +40,3 @@
     width: 300px;
     left: 30px;
     height: 3px;
-}
