@@ -1,0 +1,68 @@
+        #合併 {
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+
+    }
+    .left {
+        width: 49%;
+        display: block;
+         float: left;
+         padding:0% 0px 0% 1%;
+    }
+    .right {
+        width: 49%;
+        display: block;
+         float : right ; 
+        padding:0% 1% 0% 0px;
+
+    }
+     .特色1 {
+            background: url(../img/cake/1102.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            float: left;
+            height: 300px;
+            background-position: center center;
+            background-attachment: fixed;
+       
+        }
+     .特色2 {
+            background:url(../img/cake/1102-2.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            float:left;
+            height: 300px;
+            background-position: center center;
+            background-attachment: fixed;
+       
+        }
+         .特色3 {
+            background: url(../img/cake/1102-2.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            float:left;
+            height: 300px;
+            background-position: center center;
+            background-attachment: fixed;
+       
+        } 
+         .特色4 {
+            background: url(../img/cake/1102.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            float:left;
+            height: 300px;
+            background-position: center center;
+            background-attachment: fixed;
+       
+        }         
+        #合併 p {
+            text-align: center;
+            position: relative;
+            top: 150px;
+            font-size: 25px;
+            font-family: 華康新特圓體(P);
+            font-weight: bold;
+            color: #000;
+        }
