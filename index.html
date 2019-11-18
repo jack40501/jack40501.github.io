@@ -1,71 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="css/頁首.css">
     <link rel="stylesheet" href="css/介紹.css">
-    <link rel="stylesheet" href="css/產品.css">
     <link rel="stylesheet" href="css/頁尾.css">
     <link rel="stylesheet" href="css/rwd.css">
     <link rel="stylesheet" href="css/loading.css">
-    <link rel="stylesheet"  href="css/特色.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/特色.css">
     <script src="js/loading.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/top.js"></script>
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+       <script>
+
+   </script>
     <style type="text/css">
-  
-</style>
-    <script>
-        new WOW().init();
-
-
-    </script>
-
-   <style type="text/css">
-
-</style>
-
-
-    <title>亞比法式蛋糕</title>
+        .ui-widget-header {
+            background: none;
+            border: none;
+        }
+        
+        .產品圖 {
+            height: 160px;
+            width: 160px;
+            font-size: 15px;
+            color: #613F00;
+            font-family: "華康粗圓體";
+        }
+        
+        .產品格 {
+            font-size: 15px;
+            color: #613F00;
+            font-family: "華康粗圓體";
+            vertical-align: middle;
+            padding: 60px;
+                 text-align: center;
+        }
+        
+        .尺寸 {
+            float: left;
+            font-size: 15px;
+            vertical-align: middle;
+            padding: 0px;
+            color: #000;
+        }
+        
+        .價格 {
+            float: right;
+            color: red;
+            vertical-align: middle;
+            padding: 0px;
+            font-size: 15px;
+        }
+        
+        .品名 {
+            color: #5F93CF;
+            font-size: 20px;
+            font-family: "華康粗圓體";
+        }
+        
+        .concontainer-fluid {
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+        
+        .標題 {
+            width: 100%;
+            height: 100px;
+            color: #000;
+            font-family: "華康新特圓體(P)";
+            font-size: 35px;
+            padding: 20px 10px;
+        }
+        
+        .標題 span {
+            font-family: "Arial Black";
+            font-size: 25px;
+            color: #E48427;
+        }
+        
+        .標題線 {
+            position: relative;
+            left: 5%;
+            width: 30%;
+            border-bottom: 3px solid #000;
+        }
+        
+        .pic {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .pic img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .pic img:hover {
+            transform: scale(1.2, 1.2);
+            border: 1px solid #4d4d4d;
+        }
+        
+        body {
+            background: none;
+        }
+        
+        #anly001 {
+            padding-bottom:40px;
+            font-family: 新細明體;
+            font-size: 1.17em;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            display: block;
+            text-align: justify;
+            display: none;
+            z-index: 999;
+            float: none;
+            overflow-y: hidden;
+        }
+        
+        #anly001 img {
+            float: left;
+            width: 38%;
+        }
+        
+        #anly001 p {
+            float: right;
+            width: 58%;
+            border: 1px double #9F9D9D;
+            padding: 10px;
+            margin: 0px auto
+        }
+        
+        #anly001 form {
+            float: right;
+            width: 58%;
+            border: 1px double #9F9D9D;
+            padding: 10px;
+            text-align: left;
+            margin: 0px auto;
+        }
+        
+        select {
+            width: 100%
+        }
+        
+        .確定 {
+            width: 58%;
+            background: #AFA8A8;
+            float: right;
+            margin: 0px auto;
+            color: white
+        }
+        
+        .確定:hover {
+            background: #6573B4;
+            color: white
+        }
+        
+        .確定:checked {
+            background: red
+        }
+    </style>
 </head>
 
 <body>
-  
-    <div class="loading-wrapper">
-        <div class="loading la-square-jelly-box la-2x"><img src="img/素材/1.svg">
+    <!--<div class="loading-wrapper">
+        <div class="loading la-square-jelly-box la-2x"><img src="img/素材/1.SVG">
             <div></div>
             <div></div>
         </div>
-    </div>
+    </div> -->
     <div class="nav" id="nav">
-        <div class="logo"  id="gotop"><a href="#top" ><img src="img/logo.png" width="30px" height="30px"><p>ErBeCake</p></a></div>
+        <div class="logo" id="gotop">
+            <a href="#top"><img src="img/logo.png" width="30px" height="30px">
+                <p>ErBeCake</p>
+            </a>
+        </div>
         <div class="page" id="go1">
             <a href="#">
                 <button type="button">介紹</button>
             </a>
         </div>
-        <div class="page"  id="go2">
+        <div class="page" id="go2">
             <a href="#">
                 <button type="button">蛋糕</button>
             </a>
         </div>
-        <div class="page"  id="go3">
+        <div class="page" id="go3">
             <a href="#">
                 <button type="button">甜點</button>
             </a>
         </div>
-        <div class="page"  id="go4">
+        <div class="page" id="go4">
             <a href="#">
                 <button type="button">特色</button>
             </a>
         </div>
 
     </div>
+
     <div align="center" style="width: 100%;height: 700px;">
         <div align="center" class="框 wow">
             <div align="center" class="框二 wow">
@@ -83,520 +230,203 @@
             </div>
         </div>
     </div>
+
+    <br>
     <br id="b1">
-
-    <div class="a1">
-
-        <p class="a1font wow fadeInLeft">
-            <br>介紹<span>About</span></p>
-        <div class="分隔線 wow fadeInUp" data-wow-delay="1s"></div>
-        <br>
-        <div class="門牌 fadeInUp">
-            <img src="img/門牌.jpg" width="450" height="300" class="欄圖 wow fadeInUp" data-wow-delay="0.5s">
-        </div>
-
-        <p class="欄字  wow fadeInUp" data-wow-delay="1s" data-wow-offset="10">地址： 247新北市蘆洲區長安街189號</p>
-        <iframe class="map wow fadeInUp" data-wow-delay="1.5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5927769227806!2d121.45819831498865!3d25.081787842528065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8ba64454af1%3A0xf4ad3db87ea7e2ef!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A6ZW35a6J6KGXMTg56Jmf!5e0!3m2!1szh-TW!2stw!4v1571653996522!5m2!1szh-TW!2stw" width="300" height="300" frameborder="0" style="border:0 ;padding: 30px" ;allowfullscreen=""></iframe>
-
-    </div>
-    <br>
-    <div class="a2">
-        <div class="cake" id="b2">
-
-            <p class="a2font wow fadeInLeft" data-wow-delay="0.5s">
-
-                <br> &nbsp;&nbsp;蛋糕
-                <span>Cake</span></p>
-            <div class="分隔線 wow fadeInUp" data-wow-delay="1s"></div>
-            <br>
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.3s">
-                <img src="img/cake/青青草原.jpg" class="樣品圖" height="150px" width="150px">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">
-                    <!--蛋糕1-->
-                    <span>青青草原</span>
-                    <br>
-                    <br> 水果、鮮奶油、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$300
-                    <br>
-                    <br>NT$450
-                    <br>
-                    <br>NT$550
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.7s">
-                <img src="img/cake/蛋糕 (53).jpg" class="樣品圖" height="150px" width="150px">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">
-                    <!--蛋糕2-->
-                    <span>晨曦</span>
-                    <br>
-                    <br> 巧克力、白巧克力、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$350
-                    <br>
-                    <br>NT$500
-                    <br>
-                    <br>NT$600
-                    <br>
-                    <br>
-                </p>
-            </div>
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.7s">
-                <img src="img/cake/蛋糕 (35).jpg" class="樣品圖">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">&nbsp;&nbsp;
-                    <!--蛋糕3-->
-                    <span>靜岡之戀</span>
-                    <br>
-                    <br>&nbsp;鮮奶油、水果、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$300
-                    <br>
-                    <br>NT$450
-                    <br>
-                    <br>NT$550
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-        </div>
-        <div class="cake">
-
-            <br>
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.3s">
-                <img src="img/cake/蛋糕 (39).jpg" class="樣品圖" height="150px" width="150px">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">
-                    <!--蛋糕4-->
-                    <span>水果安娜</span>
-                    <br>
-                    <br> 水果、鮮奶油、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$300
-                    <br>
-                    <br>NT$450
-                    <br>
-                    <br>NT$550
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.7s">
-                <img src="img/cake/蛋糕 (49).jpg" class="樣品圖" height="150px" width="150px">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">
-                    <!--蛋糕5-->
-                    <span>全黑森林</span>
-                    <br>
-                    <br>&nbsp;&nbsp;巧克力、水果、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$400
-                    <br>
-                    <br>NT$550
-                    <br>
-                    <br>NT$650
-                    <br>
-                    <br>
-                </p>
-            </div>
-            <div class="cake1 wow fadeInUp" data-wow-delay="1.7s">
-                <img src="img/cake/1019-3.jpg" class="樣品圖">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <P class="樣品介紹" align="center">&nbsp;&nbsp;
-                    <!--蛋糕6-->
-                    <span>龍</span>
-                    <br>
-                    <br>&nbsp;巧克力、鮮奶油、水果、布丁、芋泥
-                </P>
-                <br>
-                <br>
-                <p class="尺寸">
-                    <br>六吋
-                    <br>
-                    <br>九吋
-                    <br>
-                    <br>十二吋
-                    <br>
-                    <br>
-                </p>
-                <p class="價格">
-                    <br>NT$300
-                    <br>
-                    <br>NT$450
-                    <br>
-                    <br>NT$550
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-    <br id="b3">
-    <div class="糕點">
-        <p class="a2font wow fadeInLeft" data-wow-delay="0.5s">
-            <br> &nbsp;&nbsp;甜點
-            <span>Dessert</span></p>
-        <div class="分隔線 wow fadeInUp" data-wow-delay="1s"></div>
-        <br>
-        <div class="糕點1 wow fadeInUp" data-wow-delay="1.3s">
-            <img src="img/糕點/糕點 (4).jpg" class="樣品圖">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <P class="樣品介紹" align="center">&nbsp;&nbsp;
-                <!--糕點1-->
-                <span>小泡芙</span>
-                <br>
-                <br>
-            </P>
-            <br>
-            <br>
-            <br>
-
-            <p class="尺寸">
-                <br>巧克力
-                <br>
-                <br>奶油
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$40
-                <br>
-                <br>NT$40
-                <br>
-
-            </p>
-        </div>
-
-        <div class="糕點1 wow fadeInUp" data-wow-delay="1.7s">
-            <img src="img/糕點/糕點 (5).jpg" class="樣品圖">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <P class="樣品介紹" align="center">&nbsp;&nbsp;
-                <!--糕點2-->
-                <span>丹麥熱狗</span>
-                <br>
-                <br>
-            </P>
-            <br>
-            <br>
-            <br>
-
-            <p class="尺寸">
-                <br>一個
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$25
-                <br>
-
-            </p>
-        </div>
-        <div class="糕點1 wow fadeInUp" data-wow-delay="2.1s">
-            <img src="img/糕點/糕點 (3).jpg" class="樣品圖">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <P class="樣品介紹" align="center">&nbsp;&nbsp;
-                <!--糕點3-->
-                <span>水果塔</span>
-                <br>
-                <br>&nbsp;草莓、芒果、奇異果、鳳梨
-            </P>
-            <br>
-            <br>
-            <br>
-
-            <p class="尺寸">
-                <br>一個
-                <br>
-                <br>
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$40
-                <br>
-                <br>
-                <br>
-
-            </p>
-        </div>
-    </div>
-    <div class="糕點">
-
-        <br>
-        <div class="糕點1 wow fadeInUp" data-wow-delay="1.3s">
-            <img src="img/cake/冰淇淋蛋糕.jpg" class="樣品圖" height="150px" width="150px">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <P class="樣品介紹" align="center">
-                <!--蛋糕4-->
-                <span>冰淇淋蛋糕(杯)</span>
-                <br>
-                <br> 抹茶紅豆、草莓、布丁、芋頭、巧克力
-            </P>
-            <br>
-            <br>
-            <p class="尺寸">
-                <br>隨機九杯
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$300
-                <br>
-
-            </p>
-        </div>
-        <div class="糕點1 wow fadeInUp" data-wow-delay="1.3s">
-            <img src="img/cake/冰淇淋蛋糕1.jpg" class="樣品圖" height="150px" width="150px">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <P class="樣品介紹" align="center">
-                <!--蛋糕4-->
-                <span>冰淇淋蛋糕</span>
-                <br>
-                <br> 芋頭、草莓、香草紅豆各一層
-            </P>
-            <br>
-            <br>
-            <p class="尺寸">
-                <br>八吋
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$350
-                <br>
-
-            </p>
-        </div>
-        <div class="糕點1 wow fadeInUp" data-wow-delay="1.3s">
-            <img src="img/糕點/糕點 (8).jpg" class="樣品圖" height="150px" width="150px">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <P class="樣品介紹" style="width: 200px; ">
-                <!--蛋糕4-->
-                <span>綠豆酥</span>
-                <br>
-                <br> 內含綠豆沙餡
-            </P>
-            <br>
-            <br>
-
-            <p class="尺寸">
-                <br>一個
-                <br>
-
-            </p>
-            <p class="價格">
-                <br>NT$45
-                <br>
-
-            </p>
-        </div>
-
-    </div>
-
-<br id="b4">
-<br>
-<div class="特色">
-        <p class="a2font wow fadeInLeft" data-wow-delay="0.5s">
-            <br> &nbsp;&nbsp;特色
-            <span>Abc</span></p>
-        <div class="分隔線 wow fadeInUp" data-wow-delay="1s"></div>
-        <br>
-        <div id="合併">
-                <div class="left">
-                     <div class="特色1">
-                            <p>❝&nbsp;堅持現點現做&nbsp;❞</p>
-                     </div>
-                </div>
-                <div class="right">
-                    <div class="特色2">
-                            <p>❝&nbsp;文字&nbsp;❞</p>
-                     </div>
-                </div>
-                <div class="left">
-                     <div class="特色3">
-                            <p>❝&nbsp;文字&nbsp;❞</p>
-                     </div>
-                </div>
-                <div class="right">
-                    <div class="特色4">
-                            <p>❝&nbsp;文字&nbsp;❞</p>
-                     </div>
+    <div class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+                <div class="標題">
+                    <p class="標題中文">蛋糕<span>Cake</span></p>
+                    <div class="標題線"></div>
                 </div>
             </div>
-      
-    <br>
-    <div class="頁尾  fadeInUp">
-        <div class="頁尾左">
-            <img src="img/logo.png" data-wow-delay="0.8s" data-wow-offset="10" width="80" height="80" class="頁尾logo wow fadeInUp">
-            <img src="img/logo文字1.png" data-wow-delay="1.2s" data-wow-offset="10" width="200" height="80" class="頁尾logo文字 wow fadeInUp">
         </div>
-        <div class="頁尾中">
 
-            <span class="頁尾h1 wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="10">聯絡我們
-            </span>
-            <hr class="hr" align="center" class="wow fadeInUP" data-wow-delay="0.8s">
+        <div class="row">
+
             <br>
 
-            <div class="聯絡我們內容">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="img/素材/定位.png" width="30px" height="40px" id="聯絡我們圖"> &nbsp;&nbsp;地址 / 新北市蘆洲區長安街189號
-                <br>
-                <br>
-                <img src="img/素材/電話.png" width="40px" height="40px" id="聯絡我們圖"> 電話 / 02-2288-2423
-                <br>
-                <br>
-                <img src="img/素材/店家.png" width="45px" height="45px" id="聯絡我們圖">時間 / 09:00–23:00
-                <br>
-                <a href="https://reurl.cc/Na05K6" width="0px" height="0px">
-                    <img src="img/素材/下載.png" class="頁尾中連結 wow fadeInUp" data-wow-delay="1.2s">
-                </a>
-                <a href="https://reurl.cc/ZnyaAg" width="0px" height="0px">
-                    <img src="img/素材/頁尾連結2.png" class="頁尾中連結 wow fadeInUp" data-wow-delay="1.8s">
-                </a>
-            </div>
-        </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
 
-        <div class="頁尾右 fb">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2F%25E4%25BA%259E%25E6%25AF%2594%25E6%25B3%2595%25E5%25BC%258F%25E8%259B%258B%25E7%25B3%2595%25E8%2598%2586%25E6%25B4%25B2%25E5%25BA%2597-500350330720483%2F&tabs=timeline&width=250&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="250" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" data-wow-delay="1.0s" data-wow-offset="5">
-            </iframe>
+                    <div id="anly001" align="center">
+                        <img src="img/cake/青青草原.jpg">
+                        <p><span class="品名">青青草原</span>
+                            <br>
+                            <span class="內容物">水果、鮮奶油、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                    </div>
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true,auto show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false,destroy()});">
+                    	<img src="img/cake/青青草原.jpg"></a>
+                </div>
+            </div>
+
+
+
+			<div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <div id="anly001" align="center">
+                        <img src="img/cake/蛋糕 (53).jpg">
+                        <p><span class="品名">晨曦</span>
+                            <br>
+                            <span class="內容物">巧克力、白巧克力、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$500</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$600</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                        <br>
+                    </div>
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false});"><img src="img/cake/蛋糕 (53).jpg"></a>
+                </div>
+            </div>
+
+
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <div id="anly001" align="center">
+                        <img src="img/cake/蛋糕 (35).jpg">
+                        <p><span class="品名">靜岡之戀</span>
+                            <br>
+                            <span class="內容物">鮮奶油、水果、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                        <br>
+                    </div>
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false});"><img src="img/cake/蛋糕 (35).jpg"></a>
+                </div>
+            </div>
+
+
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <div id="anly001" align="center">
+                        <img src="img/cake/蛋糕 (39).jpg">
+                        <p><span class="品名">水果安娜</span>
+                            <br>
+                            <span class="內容物">水果、鮮奶油、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                        <br>
+                    </div>
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false});"><img src="img/cake/蛋糕 (39).jpg"></a>
+                </div>
+            </div>
+
+
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <div id="anly001" align="center">
+                        <img src="img/cake/蛋糕 (49).jpg">
+                        <p><span class="品名">全黑森林</span>
+                            <br>
+                            <span class="內容物">巧克力、水果、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$500</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$600</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                        <br>
+                    </div>
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false});"><img src="img/cake/蛋糕 (49).jpg"></a>
+                </div>
+            </div>
+
+
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <div id="anly001" align="center">
+                        <img src="img/cake/1019-3.jpg">
+                        <p><span class="品名">龍</span>
+                            <br>
+                            <span class="內容物">巧克力、鮮奶油、水果、布丁、芋泥</span>
+                        </p>
+                        <form>價格
+                            <select name="YourLocation">
+
+                                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
+
+                                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
+
+                                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
+
+                            </select>
+                        </form>
+                        <button class="確定" id="closeBtn">確定</button>
+
+                        <br>
+                    </div>
+                     <a href="javascript: $('#anly001').dialog({autoOpen: true, show:{effect:'clip', duration: 1500}, width: '600', height: 'auto', resizable: false});"><img src="img/cake/1019-3.jpg"></a>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 
