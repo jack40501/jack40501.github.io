@@ -14,7 +14,7 @@
     }
     button{
       float: left;
-      margin: 25px 30px 20px 100px;
+      margin: 25px 30px 20px 80px;
       padding: 0px 10px 10px 0px;
       width: 50px;
       height: 30px;
@@ -47,15 +47,13 @@
         margin: 0px;
       }
     .page{
-      margin: 0px 0px 0px 100px;
+      margin: 0px 0px 0px 50px;
     }
     a{
       color:white;
     }
     button:hover{
-      font-size: 18px;
         font-family:華康新特圓體(P);
-        font-weight:bold;
       color: #000;
     }
     a:visited {

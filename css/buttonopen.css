@@ -6,7 +6,15 @@
             background: white;
             border: white;
         }
+          #彈跳框b1{
+            background: white;
+            border: white;
+        }
         #彈跳框2{
+            background: white;
+            border: white;
+        }
+        #彈跳框b2{
             background: white;
             border: white;
         }
@@ -14,7 +22,15 @@
             background: white;
             border: white;
         }
+        #彈跳框b3{
+            background: white;
+            border: white;
+        }
         #彈跳框4{
+            background: white;
+            border: white;
+        }
+        #彈跳框b4{
             background: white;
             border: white;
         }
@@ -22,7 +38,15 @@
             background: white;
             border: white;
         }
+        #彈跳框b5{
+            background: white;
+            border: white;
+        }
         #彈跳框6{
+            background: white;
+            border: white;
+        }
+#彈跳框b6{
             background: white;
             border: white;
         }
@@ -147,6 +171,42 @@
         }
         
         .anly001 form {
+            float: right;
+            width: 58%;
+            border: 1px double #9F9D9D;
+            padding: 10px;
+            text-align: left;
+            margin: 0px auto;
+        }
+
+          .anly002 {
+            padding-bottom: 40px;
+            font-family: 新細明體;
+            font-size: 1.17em;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            display: block;
+            text-align: justify;
+            display: none;
+            z-index: 999;
+            float: none;
+            overflow-y: hidden;
+        }
+        
+        .anly002 img {
+            float: left;
+            width: 38%;
+        }
+        
+        .anly002 p {
+            float: right;
+            width: 58%;
+            border: 1px double #9F9D9D;
+            padding: 10px;
+            margin: 0px auto
+        }
+        
+        .anly002 form {
             float: right;
             width: 58%;
             border: 1px double #9F9D9D;
