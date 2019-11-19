@@ -1,3 +1,4 @@
+  
   $(function(){
  //control display of goTop button and motion
     $("#gotop").click(function(){
@@ -27,21 +28,21 @@ $(window).scroll(function() {
  //control display of goTop button and motion
     $("#go1").click(function(){
         jQuery("html,body").animate({
-            scrollTop:750
+            scrollTop:$('#a1107')
         },1000);
     });},)
    $(function(){
  //control display of goTop button and motion
     $("#go2").click(function(){
         jQuery("html,body").animate({
-            scrollTop:1400
+            scrollTop:1300
         },1000);
     });},)
     $(function(){
  //control display of goTop button and motion
     $("#go3").click(function(){
         jQuery("html,body").animate({
-            scrollTop:2850
+            scrollTop:2300
         },1000);
     });},)
      $(function(){

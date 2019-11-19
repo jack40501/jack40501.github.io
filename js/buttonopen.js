@@ -108,3 +108,123 @@ $(function() {
             });
 
         });
+
+
+
+
+
+
+
+
+
+
+     $(function() {
+
+            $("#彈跳框b1").dialog({
+
+               autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b1").click(function() {
+
+                $("#彈跳框b1").dialog("open");
+
+            });
+
+          
+
+        });
+     $(function() {
+
+            $("#彈跳框b2").dialog({
+
+                autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b2").click(function() {
+
+                $("#彈跳框b2").dialog("open");
+
+            });
+
+        });
+     $(function() {
+
+            $("#彈跳框b3").dialog({
+
+                autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b3").click(function() {
+
+                $("#彈跳框b3").dialog("open");
+
+            });
+
+        });
+     $(function() {
+
+            $("#彈跳框b4").dialog({
+
+                autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b4").click(function() {
+
+                $("#彈跳框b4").dialog("open");
+
+            });
+
+        });
+     $(function() {
+
+            $("#彈跳框b5").dialog({
+
+                autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b5").click(function() {
+
+                $("#彈跳框b5").dialog("open");
+
+            });
+
+        });
+     $(function() {
+
+            $("#彈跳框b6").dialog({
+
+                autoOpen: false,width:600,height:500,modal: true,
+                buttons:{
+                    "確定": function() { $(this).dialog("close"); }
+                }
+
+            });
+
+            $("#b6").click(function() {
+
+                $("#彈跳框b6").dialog("open");
+
+            });
+
+        });
