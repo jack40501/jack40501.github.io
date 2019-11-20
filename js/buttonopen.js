@@ -2,7 +2,7 @@ $(function() {
 
             $("#彈跳框1").dialog({
 
-               autoOpen: false,width:600,height:500,modal: true,
+               autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -22,7 +22,7 @@ $(function() {
 
             $("#彈跳框2").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -40,7 +40,7 @@ $(function() {
 
             $("#彈跳框3").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -58,7 +58,7 @@ $(function() {
 
             $("#彈跳框4").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -76,7 +76,7 @@ $(function() {
 
             $("#彈跳框5").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -94,7 +94,7 @@ $(function() {
 
             $("#彈跳框6").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -122,7 +122,7 @@ $(function() {
 
             $("#彈跳框b1").dialog({
 
-               autoOpen: false,width:600,height:500,modal: true,
+               autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -142,7 +142,7 @@ $(function() {
 
             $("#彈跳框b2").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -160,7 +160,7 @@ $(function() {
 
             $("#彈跳框b3").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -178,7 +178,7 @@ $(function() {
 
             $("#彈跳框b4").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -196,7 +196,7 @@ $(function() {
 
             $("#彈跳框b5").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
@@ -214,7 +214,7 @@ $(function() {
 
             $("#彈跳框b6").dialog({
 
-                autoOpen: false,width:600,height:500,modal: true,
+                autoOpen: false,width:500,height:450,modal: true,
                 buttons:{
                     "確定": function() { $(this).dialog("close"); }
                 }
