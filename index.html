@@ -1,27 +1,34 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     <meta charset="utf-8">
 
-    <title>jQuery UI Dialog functionality</title>
+    <title>亞比法式麵包</title>
 
     <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <link rel="stylesheet" href="css/介紹.css">
+
+    <script src="js/loading.js"></script>
+    <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="js/buttonopen.js"></script>
     <link rel="stylesheet" href="css/buttonopen.css">
+    <link rel="stylesheet" href="css/nav-1.css">
+    <link rel="stylesheet" href="css/頁首.css">
+    <script src="js/top.js"></script>
 
     <!-- CSS -->
 
     <style>
-        .anly001 img {
-            height: 30vh;
-            background: #E4ACAC
-        }
+       
+        body{background: none}
+.a1{background: #a18e7f}
     </style>
 
     <!-- Javascript -->
@@ -33,9 +40,171 @@
 
 <body>
 
-    <!-- HTML -->
+    <!-- loading -->
+    <div class="loading-wrapper">
+        <div class="loading la-square-jelly-box la-2x"><img src="img/素材/1.SVG">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- nav -->
 
-    <div id="彈跳框1" title="Dialog Title goes here..." class="anly001">
+    <nav id="nav">
+        <ul>
+            <li id="gotop">
+                <a href="#top"><img src="img/logo.png" width="30px" height="30px"><span>ErBeCake</span></a>
+            </li>
+            <li id="go1"><a href="#">介紹  </a></li>
+            <li id="go2"><a href="#">蛋糕 </a></li>
+            <li id="go3"><a href="#">甜點</a></li>
+            <li><a href="tnvr.html">Tnvr</a></li>
+
+        </ul>
+    </nav>
+    <!-- a1 -->
+
+    <div align="center" style="width: 100%;height: 700px;">
+        <div align="center" class="框 wow">
+            <div align="center" class="框二 wow">
+
+                <div class="上線 wow"></div>
+                <div class="logo背景 wow" style="z-index: 0">
+                    <img src="img/logo.png" style="z-index: 20" width="150" height="150" class="logopng wow fadeInUp" data-wow-delay="2s" data-wow-offset:="10">
+                    <br>
+                    <img src="img/logo文字.png" style="z-index: 20" width="180" height="180" class="logopng-1 wow fadeInUp" data-wow-delay="2.5s" data-wow-offset:="10"></div>
+                <div class="下線 wow "></div>
+                <p class="英文logo文字 wow fadeInUp" data-wow-delay="4s" data-wow-offset="10">
+                    ErBe
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--a2-->
+    <div class="container-fluid a1">
+        <div clas="row">
+            <div class="col-12">
+                <div class="標題">
+                    <p class="標題中文">介紹<span>About</span></p>
+                    <div class="標題線"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7 fadeInUp">
+                <img src="img/門牌.jpg" width="550" height="350" class="wow fadeInUp" data-wow-delay="0.5s">
+            </div>
+            <div class="col-5">
+                <p class="wow fadeInUp" data-wow-delay="1s" data-wow-offset="10">
+                    地址： 247新北市蘆洲區長安街189號</p>
+                <br>
+                 <iframe class="wow fadeInUp" data-wow-delay="1.5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5927769227806!2d121.45819831498865!3d25.081787842528065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8ba64454af1%3A0xf4ad3db87ea7e2ef!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A6ZW35a6J6KGXMTg56Jmf!5e0!3m2!1szh-TW!2stw!4v1571653996522!5m2!1szh-TW!2stw" width="300" height="300" frameborder="0" style="border:0 ;padding: 30px" ;allowfullscreen=""></iframe>
+
+            </div>
+        </div>
+    </div>
+
+   
+<!--a3-->
+    <div class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+                <div class="標題">
+                    <p class="標題中文">蛋糕<span>Cake</span></p>
+                    <div class="標題線"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <br>
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <img src="img/去背/cake1.png" id="a1">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/cake2.png" id="a2">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/cake5.png" id="a3">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/cake6.png" id="a4">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/cake3.png" id="a5">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/cake4.png" id="a6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- a4 -->
+
+    <div class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+                <div class="標題">
+                    <p class="標題中文">甜點<span>Dessert</span></p>
+                    <div class="標題線"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <br>
+
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+
+                    <img src="img/去背/糕點1.png" id="b1">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/糕點2.png" id="b2">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/糕點3.png" id="b3">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/糕點4.png" id="b4">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/糕點5.png" id="b5">
+                </div>
+            </div>
+            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="pic">
+                    <img src="img/去背/糕點6.png" id="b6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--彈跳框-->
+     <div id="彈跳框1" title="Dialog Title goes here..." class="anly001">
         <img src="img/去背/cake1.png">
         <p><span class="品名">法式紫羅蘭</span>
             <br>
@@ -161,104 +330,6 @@
         <br>
     </div>
 
-    <div class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
-                <div class="標題">
-                    <p class="標題中文">蛋糕<span>Cake</span></p>
-                    <div class="標題線"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <br>
-
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-
-                    <img src="img/去背/cake1.png" id="a1">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/cake2.png" id="a2">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/cake5.png" id="a3">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/cake6.png" id="a4">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/cake3.png" id="a5">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/cake4.png" id="a6">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- HTML -->
-
-    <div class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
-                <div class="標題">
-                    <p class="標題中文">蛋糕<span>Cake</span></p>
-                    <div class="標題線"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <br>
-
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-
-                    <img src="img/去背/糕點1.png" id="b1">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點2.png" id="b2">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點3.png" id="b3">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點4.png" id="b4">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點5.png" id="b5">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點6.png" id="b6">
-                </div>
-            </div>
-        </div>
-    </div>
-
-  
     <div id="彈跳框b1" title="Dialog Title goes here..." class="anly002">
         <img src="img/去背/糕點1.png">
         <p><span class="品名">法式紫羅蘭</span>
