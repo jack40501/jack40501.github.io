@@ -1,55 +1,57 @@
 .ui-widget-header {
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
          #彈跳框1{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
           #彈跳框b1{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框2{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框b2{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框3{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框b3{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框4{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框b4{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框5{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框b5{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
         #彈跳框6{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
-#彈跳框b6{
+        #彈跳框b6{
             background: white;
-            border: white;
+            border: white;overflow-y: hidden;
         }
+
+
         .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
     border-bottom-right-radius:none;
 }
