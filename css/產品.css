@@ -6,7 +6,7 @@
 }
 
 .a2font {
-    font-family: "華康新特圓體(P)";
+    font-family: 華康粗圓體;
     font-size: 35px;
     color: #000;
 }
@@ -35,7 +35,7 @@
     float: left;
     font-size: 15px;
     color: #613F00;
-    font-family: "華康粗圓體";
+    font-family: 華康粗圓體;
     vertical-align: middle;
     padding: 0px;
     text-align: center;
@@ -44,7 +44,7 @@
 .樣品介紹 span {
    color: #5F93CF;
    font-size: 20px;
-   font-family: "華康粗圓體";
+   font-family: 華康粗圓體;
 }
 
 .樣品圖 {

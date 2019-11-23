@@ -5,7 +5,7 @@
 
 .欄字 {
     padding: 20px;
-    font-family: "標楷體";
+    font-family: 華康粗圓體;
     font-size: 20px;
     color: #000;
     float:left;
@@ -23,13 +23,13 @@
 }
 
 .a1font {
-    font-family: "華康新特圓體(P)";
+    font-family: 華康粗圓體;
     font-size: 40px;
     color: #000;
 }
 
 .a1font span {
-    font-family: "Arial Black";
+    font-family:Arial Black;
     font-size: 28px;
     color: #E48427;
 }
