@@ -1,509 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <meta charset="utf-8">
-
-    <title>亞比法式麵包</title>
-
-    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script src="js/wow.js"></script>
-    <link rel="stylesheet" href="css/介紹.css">
-
-    <script src="js/loading.js"></script>
-    <link rel="stylesheet" href="css/loading.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="js/buttonopen.js"></script>
-    <link rel="stylesheet" href="css/buttonopen.css">
-    <link rel="stylesheet" href="css/nav-1.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
     <link rel="stylesheet" href="css/頁首.css">
-    <link rel="stylesheet" href="css/頁尾.css">
+    <link rel="stylesheet" href="css/nav-1.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="js/loading.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/jquery.drawsvg/1/jquery.drawsvg.min.js'></script>
     <script src="js/top.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/shop.js"></script>
 
-    <!-- CSS -->
+    <script type="text/javascript">
+        $(function() { // DOM ready to be manipulated 
 
-    <style>
-        .產品動畫-1 .產品動畫-2 {
-            position: absolute;
-            background: rgba(32, 32, 32, 0.7);
-            height: 100%;
-            width: 100%;
-            bottom: 0%;
-            top: -100%;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            text-align: center;
-            padding-top: 40%;
-            margin: 0px auto;
-        }
-        
-        .產品動畫-1 a {
-            overflow: hidden;
-            position: relative;
-            display: block;
-            border: none;
-        }
-        
-        .產品動畫-1:hover .產品動畫-2 {
-            width: 100%;
-            bottom: 0%;
-            margin: 0px auto;
-            top: 0%;
-            color: white;
-            padding-top: 40%;
-        }
-        
-        .產品動畫-1 img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        a {
-            outline: none
-        }
-        .產品動畫-2 p{
-            font-size:1.5em;
-            text-shadow:none;
-            color: white;
-            font-family: 華康新特圓體(P);
+            $(window).on("scroll resize", function() {
+                if ($(this).scrollTop() > 655) {
+                    $("#nav").css('background-color', "rgba(138,114,95,0.9)");
+                    document.getElementById("nav").style.borderBottom = "none";
+                    div.style.height = height + "px";
+                } else {
+                    $("#nav").css('background-color', "#A69E9E");
+                }
+            });
 
-        }
-        body{background: none}
-        .過渡1{
-            height: 300px;
-            background: url(img/素材/11.jpg);
-            background-size: cover;
-                animation-fill-mode: forwards;
-                 background-position: center center;
-    background-attachment: fixed;
-    color:#000;
-    font-family:微軟正黑體;
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 10%;
-
-        }
-        .過渡2{
-            height: 300px;
-            background: url(img/素材/15.jpg);
-            background-size: cover;
-                animation-fill-mode: forwards;
-                 background-position: center center;
-    background-attachment: fixed;
-    color:#000;
-    font-family:微軟正黑體;
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 10%;
-
-        }
-        .過渡3{
-            height: 300px;
-            background: url(img/素材/17.jpg);
-            background-size: cover;
-                animation-fill-mode: forwards;
-                 background-position: center center;
-    background-attachment: fixed;
-    color:#000;
-    font-family:微軟正黑體;
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 10%;
-
-        }
-    </style>
-
-    <!-- Javascript -->
-
-    <script>
-                new WOW().init();
-
+        });
     </script>
 
+    <title></title>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
 
-    <!-- loading -->
-    <div class="loading-wrapper">
-        <div class="loading la-square-jelly-box la-2x"><img src="img/素材/2.gif">
+     <div class="loading-wrapper">
+        <div class="loading la-square-jelly-box la-2x"><img src="2.svg">
             <div></div>
             <div></div>
         </div>
     </div>
-    <!-- nav -->
-
     <nav id="nav">
         <ul>
             <li id="gotop">
                 <a href="#top"><img src="img/logo.png" width="30px" height="30px"><span>ErBeCake</span></a>
             </li>
-            <li id="go1"><a href="#">介紹  </a></li>
-            <li id="go2"><a href="#">蛋糕 </a></li>
-            <li id="go3"><a href="#">甜點</a></li>
-            <li id="go4"><a href="#">特色</a></li>
+            <li id="go1"><a href="#">關於我們  </a></li>
+            <li id="go2"><a href="#">產品介紹 </a></li>
+            <li id="go3"><a href="#">體驗活動</a></li>
+            <li id="go4"><a href="#">聯絡我們</a></li>
+            <li class="shop">
+                <a href="javascript:alert('尚未開放')"><img src="img/shop.png"></a>
+            </li>
 
         </ul>
     </nav>
+
     <!-- a1 -->
 
-    <div align="center" style="width: 100%;height: 700px;">
-        <div align="center" class="框 wow">
-            <div align="center" class="框二 wow">
+    <div class="main">
+        <div class="main-0" style="width: 100%;height:100vh;">
+            <div class="白色遮罩">
+                <p>
+                    <img src="img/logo11.png" style="z-index: 20" width="200" height="200" class="logopng wow fadeInUp" data-wow-delay="2s" data-wow-offset:="10">
 
-                <div class="上線 wow"></div>
-                <div class="logo背景 wow" style="z-index: 0">
-                    <img src="img/logo.png" style="z-index: 20" width="150" height="150" class="logopng wow fadeInUp" data-wow-delay="2s" data-wow-offset:="10">
-                    <br>
-                    <img src="img/logo文字.png" style="z-index: 20" width="180" height="180" class="logopng-1 wow fadeInUp" data-wow-delay="2.5s" data-wow-offset:="10"></div>
-                <div class="下線 wow "></div>
-                <p class="英文logo文字 wow fadeInUp" data-wow-delay="4s" data-wow-offset="10">
-                    ErBe
-                    <br>
                 </p>
+
             </div>
+
         </div>
-    </div>
-    <!--a2-->
-    <div class="container-fluid a1">
-        <div clas="row">
-            <div class="col-12">
-                <div class="標題">
-                    <p class="標題中文">介紹<span>About</span></p>
-                    <div class="標題線"></div>
+        <div class="main-1">
+            <div class="a1" style="width:100%;height: 1000px;">
+                <div class="row a3">
+                    <div class="col-6"><img src="img/素材/main1-2 .png"></div>
+                    <div class="col-6 a4">
+                        <h2>ABOUT ErBe</h2>我們是在蘆洲</div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-7 fadeInUp">
-                <img src="img/門牌.jpg" width="550" height="350" class="wow fadeInUp" data-wow-delay="0.5s">
-            </div>
-            <div class="col-5">
-                <p class="wow fadeInUp" data-wow-delay="1s" data-wow-offset="10">
-                    地址： 247新北市蘆洲區長安街189號</p>
-                <br>
-                <iframe class="wow fadeInUp" data-wow-delay="1.5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5927769227806!2d121.45819831498865!3d25.081787842528065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8ba64454af1%3A0xf4ad3db87ea7e2ef!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A6ZW35a6J6KGXMTg56Jmf!5e0!3m2!1szh-TW!2stw!4v1571653996522!5m2!1szh-TW!2stw" width="300" height="300" frameborder="0" style="border:0 ;padding: 30px" ;allowfullscreen=""></iframe>
+        <div class="main-2">
+            <div style="width:100%;height:auto;">
+                <div class="row ">
+                    <div class="col-6">
 
-            </div>
-        </div>
-    </div>
-<div align="center" style="width: 100%;height: 400px;">
-         <div align="center" class="過渡3 wow fadeIn"><p class="wow fadeInUp">當日現做</p>
-</div>
-</div>
-    <!--a3-->
-    <div class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
-                <div class="標題">
-                    <p class="標題中文">蛋糕<span>Cake</span></p>
-                    <div class="標題線"></div>
-                </div>
-            </div>
-        </div>
+                        <div class="col-4 cake">
+                            <img src="img/去背/cake2.png">
 
-        <div class="row">
+                            <h2>冰淇淋蛋糕</h2>
+                            <h3>$350</h3>
 
-            <br>
+                            <button class="col-9" onclick="showalert1()">購買</button>
 
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a1" style="text-decoration:none;">
-                        <img src="img/去背/cake1.png">
-                        <div class="產品動畫-2">
-                            <p>法式紫羅蘭</p>
                         </div>
-                    </a>
-                </div>
-            </div>
+                        <div class="col-4 cake">
+                            <img src="img/去背/cake3.png">
 
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a2" style="text-decoration:none;">
-                        <img src="img/去背/cake2.png" >
-                        <div class="產品動畫-2">
-                            <p>冰淇淋蛋糕</p>
+                            <h2>黑森林</h2>
+                            <h3>$350</h3>
+                            <button class="col-9" onclick="showalert2()">購買</button>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a3" style="text-decoration:none;">
-                        <img src="img/去背/cake5.png">
-                        <div class="產品動畫-2">
-                            <p>冰淇淋蛋糕(杯)</p>
+                        <div class="col-4 cake">
+                            <img src="img/去背/cake6.png">
+
+                            <h2>水果安娜</h2>
+                            <h3>$350</h3>
+
+                            <button class="col-9" onclick="showalert3()">購買</button>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a4" style="text-decoration:none;">
-                     <img src="img/去背/cake6.png">
-                        <div class="產品動畫-2">
-                            <p>水果安娜</p>
+
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點4.png">
+
+                            <h2>元寶</h2>
+                            <h3>$30</h3>
+                            <form id="form1" name="form1">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m1" id="m1" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert4();'>
+                            </form>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a5" style="text-decoration:none;">
-                        <img src="img/去背/cake3.png">
-                        <div class="產品動畫-2">
-                            <p>全黑森林</p>
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點5.png">
+
+                            <h2>丹麥熱狗</h2>
+                            <h3>$30</h3>
+                            <form id="form2" name="form2">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m2" id="m2" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert5();'>
+                            </form>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="產品動畫-1">
-                    <a href="javascript:void(0);" id="a6" style="text-decoration:none;">
-                     <img src="img/去背/cake4.png">
-                        <div class="產品動畫-2">
-                            <p>龍</p>
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點6.png">
+
+                            <h2>小泡芙</h2>
+                            <h3>$30</h3>
+                            <form id="form3" name="form3">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m3" id="m3" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert6();'>
+                            </form>
                         </div>
-                    </a>
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點1.png">
+
+                            <h2>綠豆酥</h2>
+                            <h3>$40</h3>
+                            <form id="form4" name="form4">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m4" id="m4" value="1" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert7();'>
+                            </form>
+                        </div>
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點2.png">
+
+                            <h2>烏豆沙蛋黃酥</h2>
+                            <h3>$40</h3>
+                            <form id="form5" name="form5">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m5" id="m5" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert8();'>
+                            </form>
+                        </div>
+                        <div class="col-4 cake">
+                            <img src="img/去背/糕點3.png">
+
+                            <h2>土鳳梨酥</h2>
+                            <h3>$40</h3>
+                            <form id="form6" name="form6">
+                                <p class="col-6">數量</p>
+                                <input type="text" name="m6" id="m6" class="col-6">
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert9();'>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-6 ">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!---->
-    <div align="center" style="width: 100%;height: 400px;">
-         <div align="center" class="過渡1 wow fadeIn"><p class="wow fadeInUp">當日現做</p>
-</div>
-</div>
-    <!-- a4 -->
 
-    <div class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
-                <div class="標題">
-                    <p class="標題中文">甜點<span>Dessert</span></p>
-                    <div class="標題線"></div>
-                </div>
+        <div class="main-3">
+            <div style="width:100%;height: auto;">
+                <div class="col-12 title">
+                <h1>體驗活動</h1>
+            </div>
+                <form class="row" id="form7" name="form7">
+                    <div class="col-6">
+                        <div class="col-12">
+                            <h2>名字</h2>
+                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
+                        </div>
+                        <div class="col-12">
+                            <h2>電話</h2>
+                            <input type="text" id="phone" name="phone" required placeholder="請填入您的電話號碼">
+                        </div>
+                        <div class="col-12">
+                            <h2>信箱</h2>
+                            <input type="email" id="email" name="email" required placeholder="請填入您的電子郵件">
+                        </div>
+                        <div class="col-6 do">
+                            <h2>活動</h2>
+                                <input type="radio" value="docake" id="docake" name="do1" checked required >做蛋糕
+                            <br>
+                            <input type="radio" value="dobread" id="dobread" name="do1" required >烤麵包
+                            <br>
+                            <input type="radio" value="dotoast" id="dotoast" name="do1" required >烤吐司
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-6 right">
+                        <div class="h1 col-4">
+                            <img src="img/素材/0105.jpg">
+                            <a href="#">
+                                <div class="h2">
+                                    <p>做蛋糕</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="h1 col-4">
+                            <img src="img/素材/14.jpg">
+                            <a href="#">
+                                <div class="h2">
+                                    <p>烤麵包</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="h1 col-4">
+                            <img src="img/素材/8.jpg">
+                            <a href="#">
+                                <div class="h2">
+                                    <p>烤土司</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div align="center" class="col-12">
+                        <button class="col-8" type="submit" onclick='b1();'>送出</button>
+                    </div>
+
+                </form>
             </div>
         </div>
+        <div class="main-4">
+            <div style="width:100%;height: auto;">
+                <h1>體驗活動</h1>
+                <form class="row" id="form7" name="form7">
+                    <div class="col-6">
+                        <div class="col-12">
+                            <h2>名字</h2>
+                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required >
+                        </div>
+                        <div class="col-12">
+                            <h2>電話</h2>
+                            <input type="text" id="phone" name="phone" required placeholder="請填入您的電話號碼">
+                        </div>
+                        <div class="col-12">
+                            <h2>信箱</h2>
+                            <input type="email" id="email" name="email" required="" placeholder="請填入您的電子郵件">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        123456
+                    </div>
+                    <div align="center" class="col-12">
+                        <button class="col-8" type="submit" onclick='b1();'>送出</button>
+                    </div>
 
-        <div class="row">
-
-            <br>
-
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-
-                    <img src="img/去背/糕點1.png" id="b1">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點2.png" id="b2">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點3.png" id="b3">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點4.png" id="b4">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點5.png" id="b5">
-                </div>
-            </div>
-            <div class="產品格 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="pic">
-                    <img src="img/去背/糕點6.png" id="b6">
-                </div>
-            </div>
-        </div>
-    </div>
-      <div align="center" style="width: 100%;height: 400px;">
-         <div align="center" class="過渡2 wow fadeIn"><p class="wow fadeInUp">當日現做</p>
-</div>
-</div>
-
-    <!--彈跳框1-->
-    <div id="彈跳框1" title="Dialog Title goes here..." class="anly001">
-        <img src="img/去背/cake1.png">
-        <p><span class="品名">法式紫羅蘭</span>
-            <br>
-            <span class="內容物">水果、鮮奶油、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
-
-            </select>
-        </form>
-        <br>
-
-        <br>
-    </div>
-
-    <div id="彈跳框2" title="Dialog Title goes here..." class="anly001">
-        <img src="img/去背/cake2.png">
-        <p><span class="品名">冰淇淋蛋糕</span>
-            <br>
-            <span class="內容物">巧克力、白巧克力、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$500</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$600</option>
-
-            </select>
-        </form>
-        <br>
-
-    </div>
-
-    <div id="彈跳框3" title="Dialog Title goes here..." class="anly001">
-        <img src="img/去背/cake5.png">
-        <p><span class="品名">冰淇淋蛋糕(杯)</span>
-            <br>
-            <span class="內容物">鮮奶油、水果、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
-
-            </select>
-        </form>
-        <br>
-
-    </div>
-
-    <div id="彈跳框4" title="Dialog Title goes here..." class="anly001">
-        <img src="img/去背/cake6.png">
-        <p><span class="品名">水果安娜</span>
-            <br>
-            <span class="內容物">水果、鮮奶油、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
-
-            </select>
-        </form>
-
-        <br>
-    </div>
-
-    <div id="彈跳框5" class="anly001">
-        <img src="img/去背/cake3.png">
-        <p><span class="品名">全黑森林</span>
-            <br>
-            <span class="內容物">巧克力、水果、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$500</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$600</option>
-
-            </select>
-        </form>
-
-        <br>
-    </div>
-    <div id="彈跳框6" title="Dialog Title goes here..." class="anly001">
-        <img src="img/去背/cake4.png">
-        <p><span class="品名">龍</span>
-            <br>
-            <span class="內容物">巧克力、鮮奶油、水果、布丁、芋泥</span>
-        </p>
-        <form>價格
-            <select name="YourLocation">
-
-                <option>六吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</option>
-
-                <option>九吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$450</option>
-
-                <option>十二吋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$550</option>
-
-            </select>
-        </form>
-
-        <br>
-    </div>
-    <!---->
-
-     <div class="container-fluid 頁尾">
-
-        <div class="row">
-            <div class="col-4 fadeInUp">
-                <img src="img/logo全.png" data-wow-delay="0.8s" data-wow-offset="10" width="80%" height="80%" class="頁尾logo wow fadeInUp">
-             
-            </div>
-            <div class="col-4 a11">
-                <p class="頁尾h1">聯絡我們</p>
-               
-              
-
-                <div class="聯絡我們內容">
-                   <p class="頁尾中文字">
-                    <img src="img/素材/b2.png"  id="聯絡我們圖"> 地址 / 新北市蘆洲區長安街189號
-                    <br>
-                    <br>
-                    <img src="img/素材/b5.png"  id="聯絡我們圖"> 電話 / 02-2288-2423
-                    <br>
-                    <br>
-                    <img src="img/素材/b1.png"  id="聯絡我們圖"> 時間 / 09:00–23:00
-                    <br>
-                </p>
-                    <div class="頁尾中連結">
-                    <a href="https://reurl.cc/Na05K6" width="0px" height="0px">
-                        <img src="img/素材/b4.png" class="wow fadeInUp" data-wow-delay="1.2s">
-                    </a>&nbsp;
-                    <a href="https://reurl.cc/ZnyaAg" width="0px" height="0px">
-                        <img src="img/素材/b3.png" class="wow fadeInUp" data-wow-delay="1.8s">
-                    </a>
-                </div>
-            </div>
-            
-            </div>
-            <div class="col-4 map">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2F%25E4%25BA%259E%25E6%25AF%2594%25E6%25B3%2595%25E5%25BC%258F%25E8%259B%258B%25E7%25B3%2595%25E8%2598%2586%25E6%25B4%25B2%25E5%25BA%2597-500350330720483%2F&tabs=timeline&width=250&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="250" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" data-wow-delay="1.0s" data-wow-offset="5">
-                </iframe>
+                </form>
             </div>
         </div>
     </div>
 
-</body>
+    <footer>123</footer>
 </body>
 
 </html>

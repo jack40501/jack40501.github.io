@@ -4,14 +4,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: white;
+            background: #FBE8C6;
             z-index: 9999;
         }
         
         .loading {
             position: absolute;
-            top: 40%;
-            left: 40%;
+            top: 15%;
+            left: 15%;
             margin-top: -15px;
             margin-left: -15px;
         }

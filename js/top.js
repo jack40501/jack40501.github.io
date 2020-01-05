@@ -1,3 +1,17 @@
+   $(function() { // DOM ready to be manipulated 
+
+            $(window).on("scroll resize", function() {
+                if ($(this).scrollTop() > 655) {
+                    $("#nav").css('background-color', "rgba(138,114,95,0.9)");
+                    document.getElementById("nav").style.borderBottom = "none";
+                    div.style.height = height + "px";
+                } else {
+                    $("#nav").css('background-color', "#A69E9E");
+                    document.getElementById("nav").style.borderBottom = "2px solid #ffffff";
+                }
+            });
+
+        });
   
   $(function(){
  //control display of goTop button and motion
@@ -7,23 +21,8 @@
         },1000);
     });
 
-    $(window).scroll(function() {
-        if ( $(this).scrollTop() > 150){
-            $('#gotop').fadeIn("fast");
-        } else {
-            $('#gotop').stop().fadeOut("fast");
-        }
-    });
-});
 
-$(window).scroll(function() {
-        if ( $(this).scrollTop() > 655){
-            $('#nav').fadeIn("fast");
-        } else {
-            $('#nav').stop().fadeOut("fast");
-        }
-    });
-;
+
   $(function(){
  //control display of goTop button and motion
     $("#go1").click(function(){

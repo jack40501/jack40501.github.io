@@ -1,5 +1,5 @@
 .nav{
-      display: none;
+      display: auto;
       position: fixed;
       top: 0px;
       color:#000;
@@ -12,6 +12,9 @@
       z-index:9;
       background:rgba(255,255,255,1);
 
+    }
+    nav{
+      background: none;
     }
     button{
       float: left;

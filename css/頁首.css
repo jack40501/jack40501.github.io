@@ -1,7 +1,6 @@
 body {
     margin: 0px auto;
     overflow-x: hidden;
-    background: url(../img/素材/背景.png) repeat;
 }
 
 html body {
@@ -10,160 +9,233 @@ html body {
     margin: 0px auto;
 }
 
-.上線 {
-    position: relative;
-    opacity: 0.0;
-    background: white;
-    width: 150px;
-    top: 120px;
-    margin: 0px auto 0;
-    height: 5px;
-    animation-name: one;
-    animation-duration: 1s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    z-index: 12
-}
-
-@keyframes one {
-    from {
-        opacity: 0.0;
-        width: 20px;
-    }
-    to {
-        opacity: 1.0;
-        width: 150px;
-    }
-}
-
-.logo文字 {
-    color: #FF0;
-    font-family: "華康行書體(P)";
-    font-size: 25px;
-    height: 70px;
-    line-height: 70px;
-    top: 120px;
-    margin: 0px auto 0;
-    position: relative;
-}
-
-.下線 {
-    opacity: 0.0;
-    position: relative;
-    animation-delay: 2s;
-    background: white;
-    width: 150px;
-    top: 160px;
-    margin: 0px auto 0;
-    height: 5px;
-    animation-name: three;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes three {
-    from {
-        opacity: 0.0;
-        width: 20px;
-    }
-    to {
-        opacity: 1.0;
-        width: 150px;
-    }
-}
-
-.框 {
-    height: 650px;
-    width: 100%;
-    position: relative;
-    background: url(../img/素材/5.jpg) no-repeat center;
-    animation-name: fore;
-    animation-duration: 0.0s;
-    animation-delay: 3.5s;
-    animation-fill-mode: forwards;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-@keyframes fore {
-    0% {
-        background: url(../img/素材/5.jpg) no-repeat center;
-        background-size: cover;
-    }
-    100% {
-        background: url(../img/素材/5.jpg) no-repeat center;
-        background-size: cover;
-     }
-}
-
-.框二 {
-    height: 650px;
-    width: 100%;
-    position: relative;
-    animation-name: fre;
-    animation-duration: 2.0s;
-    animation-delay: 3.5s;
-    animation-fill-mode: forwards;
-    background-size: cover;
-
-
-}
-
-@keyframes fre {
-    0% {
-        background: url(../img/素材/4.jpg) no-repeat center;
-        background-size: cover;
-    }
-    100% {
-        background: url(../img/素材/4.jpg) no-repeat center;
-        background-size: cover;
-          background-position: center center;
-    background-attachment: fixed;
-    }
-}
-
-.英文logo文字 {
-    top: -180px;
-    opacity: 1.0;
-    position: relative;
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    font-family: "Monotype Corsiva";
-}
-
 .logopng {
     position: relative;
     top: 10px;
     z-index: 4;
+    margin: 20px 0px;
 }
 
-.logo背景 {
+.main-1 {
+    height: 1000px;
     width: 100%;
-    height: 200px;
-    position: relative;
-    top: 140px;
-    animation-name: logo背景;
-    animation-delay: 3.5S;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.a1 {
+    background: url(../img/素材/main-1.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+.a2 {
+    position: absolute;
+    top: 120%;
+    left: 400px
+}
+
+.a3 {
+    padding-top: 300px;
     z-index: 10;
+    padding-bottom: 200px;
+    margin: 0px 150px;
 }
 
-@keyframes logo背景 {
-    0% {
-        background: none;
-        opacity: 1.0
-    }
-    100% {
-        background: rgba(255, 255, 255, 0.4);
-        opacity: 1.0;
-    }
+.a4 {
+    color: white;
+    text-shadow: 3px 3px 3px #7b3f00;
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    font-weight: 600;
 }
 
-.logopng-1 {
+body {
+    margin: 0px;
+}
+
+.a4 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.b1 {
+    height: 300px;
+}
+
+.main-3 {
+    height: 1400px;
+    width: 100%;
+    z-index: 1;
+}
+
+.c1 {
+    background: url(../img/main-1-1.png) no-repeat;
+    background-size: contain;
+    z-index: 9;
+    background-attachment: fixed;
+}
+
+.main-0 {
     position: relative;
-    top: -120px;
-    z-index: 16;
+    background-size: cover;
+    background: url(../img/素材/4.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-3 {
+    padding: 100px 80px;
+    height: auto;
+    color: white;
+    font-family: 微軟正黑體;
+    position: relative;
+    background-size: cover;
+    background: url(../img/素材/main-3.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-3 h1 {
+    font-weight: bold
+}
+
+.白色遮罩 {
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px 0px
+}
+
+.白色遮罩 p {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.shop {
+    float: right;
+}
+
+.main-2 .row .col-6 .cake img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #F5B07B;
+}
+
+.main-3 .row .right img {
+    width: 175px;
+    height: 350px;
+    border-radius: 20%;
+    position: relative;
+    float: left;
+    margin: 20px;
+}
+
+.cake {
+    text-align: center;
+    float: left;
+    margin: 30px 0px;
+}
+
+select {
+    margin: 20px 0px;
+}
+
+.cake input {
+    float: right;
+}
+
+.cake p {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px auto;
+    margin: 10px 0px;
+}
+
+.main-3 h1 {
+    text-align: center;
+    border-bottom: 4px solid #9E784E;
+    width: 200px;
+    padding-bottom: 5px;
+    color: white;
+}
+.main-3 .title{
+        transform: translateX(40%)
+
+}
+.main-3 button {
+    text-align: center;
+}
+
+.do input {
+    padding: 0px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.do {
+    line-height: 20px;
+    font-size: 30px;
+}
+
+.h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    padding: 0px;
+    margin: 20px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+
+.h1 {
+    position: relative;
+    padding: 0px;
+    margin: 20px;
+    width: 175px;
+    height: 350px;
+    border-radius: 20%;
+    float: left;
+}
+
+.h1 a:hover .h2 {
+    opacity: 1;
+    box-shadow: none;
+    font-size: 30px;
+}
+
+.h2 p {
+    text-align: center;
+    transform: translateY(-50%);
+    position: relative;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    top: 50%;
+    font-size: 40px;
+    color: #FFDA96;
 }
