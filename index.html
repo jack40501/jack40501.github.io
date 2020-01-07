@@ -9,22 +9,26 @@
     <link rel="stylesheet" href="css/nav-1.css">
     <link rel="stylesheet" href="css/loading.css">
     <script src="js/loading.js"></script>
+    <script src="js/wow.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <script src='https://cdn.jsdelivr.net/jquery.drawsvg/1/jquery.drawsvg.min.js'></script>
     <script src="js/top.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/shop.js"></script>
-
+    <script>
+        new WOW().init();
+    </script>
     <script type="text/javascript">
         $(function() { // DOM ready to be manipulated 
 
             $(window).on("scroll resize", function() {
-                if ($(this).scrollTop() > 655) {
+                if ($(this).scrollTop() > 900) {
                     $("#nav").css('background-color', "rgba(138,114,95,0.9)");
                     document.getElementById("nav").style.borderBottom = "none";
                     div.style.height = height + "px";
                 } else {
-                    $("#nav").css('background-color', "#A69E9E");
+                    $("#nav").css('background-color', "none");
                 }
             });
 
@@ -39,24 +43,25 @@
 
 <body>
 
-     <div class="loading-wrapper">
+    <!--<div class="loading-wrapper">
         <div class="loading la-square-jelly-box la-2x"><img src="2.svg">
             <div></div>
             <div></div>
         </div>
-    </div>
+    </div>-->
     <nav id="nav">
         <ul>
             <li id="gotop">
-                <a href="#top"><img src="img/logo.png" width="30px" height="30px"><span>ErBeCake</span></a>
+                <a href="#top"><img src="img/0107-1.png"></a>
             </li>
-            <li id="go1"><a href="#">關於我們  </a></li>
-            <li id="go2"><a href="#">產品介紹 </a></li>
-            <li id="go3"><a href="#">體驗活動</a></li>
-            <li id="go4"><a href="#">聯絡我們</a></li>
             <li class="shop">
-                <a href="javascript:alert('尚未開放')"><img src="img/shop.png"></a>
+                <button onclick='showalert11();'><img src="img/shop.png">
             </li>
+            <li id="go4" class="li"><a href="#">聯絡我們</a></li>
+            <li id="go3" class="li"><a href="#">體驗活動</a></li>
+            <li id="go2" class="li"><a href="#">產品介紹 </a></li>
+
+            <li id="go1" class="li"><a href="#">關於我們  </a></li>
 
         </ul>
     </nav>
@@ -65,9 +70,9 @@
 
     <div class="main">
         <div class="main-0" style="width: 100%;height:100vh;">
-            <div class="白色遮罩">
+            <div class="白色遮罩 wow fadeIn">
                 <p>
-                    <img src="img/logo11.png" style="z-index: 20" width="200" height="200" class="logopng wow fadeInUp" data-wow-delay="2s" data-wow-offset:="10">
+                    <img src="img/logo11.png" style="z-index: 20" width="200" height="200" class="logopng wow fadeInUp" data-wow-delay="1s" data-wow-offset:="10">
 
                 </p>
 
@@ -75,125 +80,185 @@
 
         </div>
         <div class="main-1">
-            <div class="a1" style="width:100%;height: 1000px;">
+            <div class="a1" style="width:100%;height: 100vh;">
                 <div class="row a3">
-                    <div class="col-6"><img src="img/素材/main1-2 .png"></div>
-                    <div class="col-6 a4">
-                        <h2>ABOUT ErBe</h2>我們是在蘆洲</div>
+                    <div class="col-6 wow fadeIn left"><img src="img/素材/main1-3.png"></div>
+                    <div class="col-6 a4 wow fadeIn" data-wow-delay="0.8s">
+                        <h2 class="fadeInUp">ABOUT ErBe</h2> 我們是在蘆洲
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="main-2">
+        <div class="main-2 mainb">
             <div style="width:100%;height:auto;">
+                <div class="col-12 title wow fadeIn">
+                    <p>產品介紹</p>
+                </div>
                 <div class="row ">
-                    <div class="col-6">
+                    <div class="col-xl-7 col-lg-12 col-sm-12  col-xs-12 ">
 
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake ">
                             <img src="img/去背/cake2.png">
 
                             <h2>冰淇淋蛋糕</h2>
                             <h3>$350</h3>
+                            <form id="form1" name="form1">
 
-                            <button class="col-9" onclick="showalert1()">購買</button>
+                                <select name="m1" class="col-12">
+
+                                    <option value="350" selected>8吋$350</option>
+
+                                    <option value="450">10吋$450</option>
+
+                                    <option value="550">12吋$550</option>
+
+                                </select>
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert1();'>
+                            </form>
 
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/cake3.png">
 
                             <h2>黑森林</h2>
                             <h3>$350</h3>
-                            <button class="col-9" onclick="showalert2()">購買</button>
+                            <form id="form2" name="form2">
+
+                                <select name="m2" class="col-12">
+
+                                    <option value="350">8吋$350</option>
+
+                                    <option value="450" selected>10吋$450</option>
+
+                                    <option value="550">12吋$550</option>
+
+                                </select>
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert2();'>
+                            </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/cake6.png">
 
                             <h2>水果安娜</h2>
                             <h3>$350</h3>
 
-                            <button class="col-9" onclick="showalert3()">購買</button>
+                            <form id="form3" name="form3">
+
+                                <select name="m3" class="col-12">
+
+                                    <option value="350">8吋$350</option>
+
+                                    <option value="450">10吋$450</option>
+
+                                    <option value="550" selected>12吋$550</option>
+
+                                </select>
+                                <input type='button' name='submit' value='加入購物車' onclick='showalert3();'>
+                            </form>
                         </div>
 
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點4.png">
 
                             <h2>元寶</h2>
                             <h3>$30</h3>
-                            <form id="form1" name="form1">
+                            <form id="form4" name="form4">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m1" id="m1" class="col-6">
+                                <input type="text" name="m4" id="m4" class="col-6" value="1">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert4();'>
                             </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點5.png">
 
                             <h2>丹麥熱狗</h2>
                             <h3>$30</h3>
-                            <form id="form2" name="form2">
+                            <form id="form5" name="form5">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m2" id="m2" class="col-6">
+                                <input type="text" name="m5" id="m5" class="col-6" value="1">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert5();'>
                             </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點6.png">
 
                             <h2>小泡芙</h2>
                             <h3>$30</h3>
-                            <form id="form3" name="form3">
+                            <form id="form6" name="form6">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m3" id="m3" class="col-6">
+                                <input type="text" name="m6" id="m6" class="col-6" value="1">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert6();'>
                             </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點1.png">
 
                             <h2>綠豆酥</h2>
                             <h3>$40</h3>
-                            <form id="form4" name="form4">
+                            <form id="form7" name="form7">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m4" id="m4" value="1" class="col-6">
+                                <input type="text" name="m7" id="m7" value="1" class="col-6">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert7();'>
                             </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點2.png">
 
                             <h2>烏豆沙蛋黃酥</h2>
                             <h3>$40</h3>
-                            <form id="form5" name="form5">
+                            <form id="form8" name="form8">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m5" id="m5" class="col-6">
+                                <input type="text" name="m8" id="m8" value="1" class="col-6">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert8();'>
                             </form>
                         </div>
-                        <div class="col-4 cake">
+                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
                             <img src="img/去背/糕點3.png">
 
                             <h2>土鳳梨酥</h2>
                             <h3>$40</h3>
-                            <form id="form6" name="form6">
+                            <form id="form9" name="form9">
                                 <p class="col-6">數量</p>
-                                <input type="text" name="m6" id="m6" class="col-6">
+                                <input type="text" name="m9" value="1" id="m9" class="col-6">
                                 <input type='button' name='submit' value='加入購物車' onclick='showalert9();'>
                             </form>
                         </div>
 
                     </div>
-                    <div class="col-6 ">
+                    <div class="col-xl-4 col-lg-12 col-sm-12  col-xs-12  ">
+                        <div id="a0106" class="a0106">
+                        </div>
+                        <br>
+
+                        <div class="do">
+                            是否使用折價券
+                            <br>
+                            <form id="mm" name="mm">
+
+                                <select name="discount" class="col-12">
+
+                                    <option value="8">使用8折折價券</option>
+
+                                    <option value="9">使用9折折價券</option>
+                                    <option value="10">不使用折價券</option>
+
+                                </select>
+                        </div>
+
+                        <input type='button' name='submit' value='結算' onclick='showalert10();'>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="main-3">
+        <div class="main-3 mainb">
             <div style="width:100%;height: auto;">
                 <div class="col-12 title">
-                <h1>體驗活動</h1>
-            </div>
-                <form class="row" id="form7" name="form7">
-                    <div class="col-6">
+                    <p>體驗活動</p>
+                </div>
+                <form class="row" id="form10" name="form10">
+                    <div class="col-5">
                         <div class="col-12">
                             <h2>名字</h2>
                             <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
@@ -208,18 +273,18 @@
                         </div>
                         <div class="col-6 do">
                             <h2>活動</h2>
-                                <input type="radio" value="docake" id="docake" name="do1" checked required >做蛋糕
+                            <input type="radio" value="docake" id="docake" name="do1" checked required>做蛋糕
                             <br>
-                            <input type="radio" value="dobread" id="dobread" name="do1" required >烤麵包
+                            <input type="radio" value="dobread" id="dobread" name="do1" required>烤麵包
                             <br>
-                            <input type="radio" value="dotoast" id="dotoast" name="do1" required >烤吐司
+                            <input type="radio" value="dotoast" id="dotoast" name="do1" required>烤吐司
                             <br>
                         </div>
                     </div>
-                    <div class="col-6 right">
+                    <div class="col-7 right">
                         <div class="h1 col-4">
                             <img src="img/素材/0105.jpg">
-                            <a href="#">
+                            <a href="javascript:void(0);">
                                 <div class="h2">
                                     <p>做蛋糕</p>
                                 </div>
@@ -228,7 +293,7 @@
 
                         <div class="h1 col-4">
                             <img src="img/素材/14.jpg">
-                            <a href="#">
+                            <a href="javascript:void(0);">
                                 <div class="h2">
                                     <p>烤麵包</p>
                                 </div>
@@ -236,7 +301,7 @@
                         </div>
                         <div class="h1 col-4">
                             <img src="img/素材/8.jpg">
-                            <a href="#">
+                            <a href="javascript:void(0);">
                                 <div class="h2">
                                     <p>烤土司</p>
                                 </div>
@@ -250,14 +315,14 @@
                 </form>
             </div>
         </div>
-        <div class="main-4">
+        <div class="main-4 mainb">
             <div style="width:100%;height: auto;">
                 <h1>體驗活動</h1>
-                <form class="row" id="form7" name="form7">
+                <form class="row" id="form40" name="form40">
                     <div class="col-6">
                         <div class="col-12">
                             <h2>名字</h2>
-                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required >
+                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
                         </div>
                         <div class="col-12">
                             <h2>電話</h2>
@@ -280,7 +345,17 @@
         </div>
     </div>
 
-    <footer>123</footer>
+    <footer>
+        <div class="col-4 left"><h1>聯絡資訊</h1>
+                    <p><img src="img/素材/b2.png" > 地址 / 新北市蘆洲區長安街189號</p>
+                   
+                   <p> <img src="img/素材/b5.png"  > 電話 / 02-2288-2423</p>
+                   
+                    <p><img src="img/素材/b1.png"  > 時間 / 09:00–23:00</p>
+                </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </footer>
 </body>
 
 </html>
