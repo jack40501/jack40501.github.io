@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
-    <link rel="stylesheet" href="css/頁首.css">
-    <link rel="stylesheet" href="css/nav-1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/loading.css">
     <script src="js/loading.js"></script>
     <script src="js/wow.js"></script>
@@ -43,12 +43,12 @@
 
 <body>
 
-    <!--<div class="loading-wrapper">
-        <div class="loading la-square-jelly-box la-2x"><img src="2.svg">
+    <div class="loading-wrapper">
+        <div class="loading la-square-jelly-box la-2x"><img src="svg.svg">
             <div></div>
             <div></div>
         </div>
-    </div>-->
+    </div>
     <nav id="nav">
         <ul>
             <li id="gotop">
@@ -84,7 +84,7 @@
                 <div class="row a3">
                     <div class="col-6 wow fadeIn left"><img src="img/素材/main1-3.png"></div>
                     <div class="col-6 a4 wow fadeIn" data-wow-delay="0.8s">
-                        <h2 class="fadeInUp">ABOUT ErBe</h2> 我們是在蘆洲
+                        <h2 class="fadeInUp">ABOUT ErBe</h2> 我們是在蘆洲的一家麵包店
                     </div>
                 </div>
             </div>
@@ -225,7 +225,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-4 col-lg-12 col-sm-12  col-xs-12  ">
+                    <div class="col-xl-4 col-lg-12 col-sm-12  col-xs-12 right ">
                         <div id="a0106" class="a0106">
                         </div>
                         <br>
@@ -258,7 +258,7 @@
                     <p>體驗活動</p>
                 </div>
                 <form class="row" id="form10" name="form10">
-                    <div class="col-5">
+                    <div class="col-4">
                         <div class="col-12">
                             <h2>名字</h2>
                             <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
@@ -281,9 +281,9 @@
                             <br>
                         </div>
                     </div>
-                    <div class="col-7 right">
+                    <div class="col-8 right">
                         <div class="h1 col-4">
-                            <img src="img/素材/0105.jpg">
+                            <img src="img/素材/0108-1.jpg">
                             <a href="javascript:void(0);">
                                 <div class="h2">
                                     <p>做蛋糕</p>
@@ -317,7 +317,9 @@
         </div>
         <div class="main-4 mainb">
             <div style="width:100%;height: auto;">
-                <h1>體驗活動</h1>
+                <div class="col-12 title">
+                    <p>聯絡我們</p>
+                </div>
                 <form class="row" id="form40" name="form40">
                     <div class="col-6">
                         <div class="col-12">
@@ -332,11 +334,17 @@
                             <h2>信箱</h2>
                             <input type="email" id="email" name="email" required="" placeholder="請填入您的電子郵件">
                         </div>
+                         <div class="col-12">
+                            <h2>留下你的話</h2>
+                            <textarea cols="50" rows="5" style="width: 100%">
+　輸入你想要寫的內容...
+</textarea>
+                        </div>
                     </div>
                     <div class="col-6">
-                        123456
+                        
                     </div>
-                    <div align="center" class="col-12">
+                    <div align="center" class="col-12" style="padding-top: 50px;">
                         <button class="col-8" type="submit" onclick='b1();'>送出</button>
                     </div>
 
@@ -346,15 +354,27 @@
     </div>
 
     <footer>
-        <div class="col-4 left"><h1>聯絡資訊</h1>
-                    <p><img src="img/素材/b2.png" > 地址 / 新北市蘆洲區長安街189號</p>
-                   
-                   <p> <img src="img/素材/b5.png"  > 電話 / 02-2288-2423</p>
-                   
-                    <p><img src="img/素材/b1.png"  > 時間 / 09:00–23:00</p>
-                </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+        <div class="row">
+            <div class="col-4 left">
+                <h1>聯絡資訊</h1>
+                <p><img src="img/素材/b2.png"> 地址 / 新北市蘆洲區長安街189號</p>
+
+                <p> <img src="img/素材/b5.png"> 電話 / 02-2288-2423</p>
+
+                <p><img src="img/素材/b1.png"> 時間 / 09:00–23:00</p>
+            </div>
+            <div class="col-4" style="color: #000">
+                <h1>快速導覽</h1>
+                <p id="top1"><a href="#">關於我們</a></p>
+                <p id="top2"><a href="#">產品介紹</a></p>
+                <p id="top3"><a href="#">體驗活動</a></p>
+                <p id="top4"><a href="#">聯絡我們</a></p>
+            </div>
+            <div class="col-4">
+                <h1>地圖</h1>
+                <iframe width='100%' height='250px' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=247新北市蘆洲區長安街189號號&z=16&output=embed&t='></iframe>
+            </div>
+        </div>
     </footer>
 </body>
 

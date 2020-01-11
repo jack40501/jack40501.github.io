@@ -1,65 +1,108 @@
-.nav{
-      display: auto;
-      position: fixed;
-      top: 0px;
-      color:#000;
-      font-family: 華康新特圓體(P);
-       font-weight:bold;
-      color: #000;
-      width: 100%;
-      height: 60px;
-      border-bottom: 2px solid rgba(0,0,0,0.7);
-      z-index:9;
-      background:rgba(255,255,255,1);
-
-    }
-    nav{
-      background: none;
-    }
-    button{
-      float: left;
-      margin: 25px 30px 20px 80px;
-      padding: 0px 10px 10px 0px;
-      width: 50px;
-      height: 30px;
-      background: rgba(255,255,255,0.0);
-      border-color: rgba(0,0,0,1.0);
-      border: 10px;
-       font-size: 15px;
-      font-family:華康新特圓體(P)
-      font-weight:bold;
-
-    }
-    .logo{
-      float: left;
-      margin: 20px 30px 0px 30px;
-      padding: 0px 10px 10px 0px;
-     
-    }
-   .logo p{
-    margin: 0px;
-    padding: 0px;
-    float: left;
-     font-size: 30px;
-      font-family:Monotype Corsiva;
-       font-weight:bold;
-       color: #000;
-   }
-   .logo img{
-        float: left;
-        padding: 0px;
-        margin: 0px;
-      }
-    .page{
-      margin: 0px 0px 0px 50px;
-    }
-    a{
+a{
       color:white;
+        text-decoration:none;
     }
-    button:hover{
-        font-family:華康新特圓體(P);
-      color: #000;
-    }
+   
     a:visited {
-    color: #000;
+    color: white;
   }
+  a:hover{
+    color: white;
+    text-decoration:none;
+
+  }
+.li:hover{
+   transition: all 0.4s;
+color: white;
+background: #D09065;
+border-radius: 30%;
+
+}
+li img{
+  width: 300px;
+  height: 120px !important;
+  float: left;
+  padding-top: 20px;
+
+}
+.li{
+  float: right !important;
+
+}
+ li{
+
+transition: all 0.4s;
+margin-right:10px;
+margin-left:10px;
+line-height: 120px;
+padding-right: 10px;
+padding-left: 10px;
+list-style:none;
+ display: inline-block;
+  float: left;
+  vertical-align: top;
+color: white;
+font-family: 微軟正黑體;
+font-weight: bold;
+font-size: 20px;
+}
+
+nav{
+    text-align: center;
+transition: all 0.4s;
+
+  background:auto;
+  width: 100%;
+  height: 120px;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  top:0px;
+  z-index: 99;
+  display: auto;
+  
+}
+
+li button{
+  background: none;
+  border:none;
+    height: 100px;
+    padding-top: 25px;
+
+}
+.shop{
+  height: 100px;
+}
+
+
+
+
+
+
+li button img{
+ width: 60px !important; height: 60px !important;padding: 0px !important;
+
+}
+ .top {
+            position: fixed;
+            top: 70%;
+            right: 2.5%;
+            opacity: 0.6;
+            animation-name: atop;
+            animation-duration: 3s;
+        }
+        
+        @keyframes atop {
+            from {
+                top: 0%;
+                transform: rotate(0deg);
+            }
+            to {
+                top: 70%;
+                transform: rotate(360deg);
+            }
+        }
+        
+        .top:hover {
+            opacity: 0.9;
+        }

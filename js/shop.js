@@ -71,24 +71,40 @@ const form = document.forms['form2'];
      alert('我們感謝' + name + '參加此活動' + '\n若成功參加可以從' + email + '看見我們的回信' + '\n或者我們會打' + phone + '來與你聯絡');
  }
  function showalert10(){
- 	a1='冰淇淋蛋糕價格'
- 	a2='黑森林蛋糕價格'
- 	a3='水果安娜蛋糕價格'
- 	a4='元寶價格'
- 	a5='丹麥熱狗價格'
- 	a6='小泡芙價格'
- 	a7='綠豆酥價格'
- 	a8='烏豆沙蛋黃酥價格'
- 	a9='土鳳梨酥價格'
-
- 	const form = document.forms['mm'];
+ 	a1='冰淇淋蛋糕'
+ 	a2='黑森林蛋糕'
+ 	a3='水果安娜蛋糕'
+ 	a4='元寶'
+ 	a5='丹麥熱狗'
+ 	a6='小泡芙'
+ 	a7='綠豆酥'
+ 	a8='烏豆沙蛋黃酥'
+ 	a9='土鳳梨酥'
+ const form = document.forms['mm'];
      const discount = form.elements.discount.value;
        dis = discount/10
        a10=s1+s2+s3+s4+s5+s6+s7+s8+s9
-	a12=(s1+s2+s3+s4+s5+s6+s7+s8+s9)*dis
-	a11=a10-a12 
-Label.setForeground(Color.red);
-            document.getElementById('a0106').innerHTML = a1 + s1 + '<br>' + a2 + s2  + '<br>' + a3 + s3 + '<br>' + a4 + s4 +'<br>' + a5 + s5 + '<br>' + a6 + s6 + '<br>' + a7 + s7 + '<br>' + a8 + s8 + '<br>' + a9 + s9 + '<br>折價前' + a10 +'<br>使用'+ discount +'折折價券後' +'<br>折價金額'+ a11 +'<br>最終價格' + a12 }
+    a12=(s1+s2+s3+s4+s5+s6+s7+s8+s9)*dis
+    a11=a10-a12 
+
+            document.getElementById('a0106').innerHTML = 
+            '<p class="moneytitle">結算價格</p>' + '<br>' + '<p class="cakename">' + '<span class="mleft">' + a1 + '</span>' + '<span class="mright">' + s1 + '</span>' + '</p>'  + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a2 + '</span>' + '<span class="mright">' + s2 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a3 + '</span>' + '<span class="mright">' + s3 + '</span>' + '</p>' + ' <br> ' +
+              '<p class="cakename">' + '<span class="mleft">' + a4 + '</span>' + '<span class="mright">' + s4 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a5 + '</span>' + '<span class="mright">' + s5 + '</span>' + '</p>' + ' <br> ' +
+              '<p class="cakename">' + '<span class="mleft">' + a6 + '</span>' + '<span class="mright">' + s6 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a7 + '</span>' + '<span class="mright">' + s7 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a8 + '</span>' + '<span class="mright">' + s9 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + a9 + '</span>' + '<span class="mright">' + s9 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft"> ' + '折價前' + '</span>' + '<span class="mright">' + a10 + '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + '使用' + '</span>' + '<span class="mright">' + discount + '折價券'+ '</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + '折價金額' + '</span>' + '<span class="mright">' + a11 +'</span>' + '</p>' + ' <br> ' +
+            '<p class="cakename">' + '<span class="mleft">' + '最終價格' + '</span>' + '<span class="mright">' + a12 + '</span>' + '</p>'  
+
+
+        }
+       
        function showalert11(){
 
 　　window.open ('money.html', 'newwindow', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no') 
