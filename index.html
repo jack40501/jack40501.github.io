@@ -1,381 +1,509 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/loading.css">
-    <script src="js/loading.js"></script>
-    <script src="js/wow.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-
-    <script src='https://cdn.jsdelivr.net/jquery.drawsvg/1/jquery.drawsvg.min.js'></script>
-    <script src="js/top.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/shop.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=debice-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
         new WOW().init();
     </script>
-    <script type="text/javascript">
-        $(function() { // DOM ready to be manipulated 
+    <script type="text/javascript" src="js/wow.js"></script>
 
-            $(window).on("scroll resize", function() {
-                if ($(this).scrollTop() > 900) {
-                    $("#nav").css('background-color', "rgba(138,114,95,0.9)");
-                    document.getElementById("nav").style.borderBottom = "none";
-                    div.style.height = height + "px";
-                } else {
-                    $("#nav").css('background-color', "none");
-                }
-            });
-
-        });
-    </script>
-
-    <title></title>
-    <style type="text/css">
-
-    </style>
+    <title>徐逢謙</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark top-fixed " id="nav">
+            <div class="container ">
+                <button class="navbar-toggler navicon" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/0107-1.png"></a>
 
-    <div class="loading-wrapper">
-        <div class="loading la-square-jelly-box la-2x"><img src="svg.svg">
-            <div></div>
-            <div></div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="navcolor">
+                        <a class="nav-item nav-link " href="#" id="navcolor">首頁 <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link " href="#" id="navcolor">關於我們</a>
+                        <a class="nav-item nav-link " href="#" id="navcolor">最新消息</a>
+                        <a class="nav-item nav-link " href="#" id="navcolor">蛋糕介紹</a>
+                        <a class="nav-item nav-link " href="#" id="navcolor">麵包介紹</a>
+
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-shop m-0" id="navbarNavAltMarkup-1">
+                    <div class="navbar-nav-1" id="navcolor">
+                        <div class="navshop">
+                            <div class="nav-banner p-2">
+                                <p>購物車</p>
+                            </div>
+                            <div class="nav-container p-2">
+
+
+
+
+
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="col-12 shopcake " id="a0419">
+                                            <div style="text-align: right;">
+                                                <button class="btn btn-dark " id="shopoff" type="button" name="1"
+                                                    value="1" onclick="off();">X</button>
+                                            </div>
+                                            <div id="shop1"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="col-12 shopcake" id="a0419">
+                                            <div style="text-align: right;">
+                                                <button class="btn btn-dark " id="shopoff" type="button" name="2"
+                                                    value="2" onclick="off();">X</button>
+                                            </div>
+
+                                            <div id="shop2"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="col-12 shopcake" id="a0419">
+                                            <div style="text-align: right;">
+                                                <button class="btn btn-dark " id="shopoff" type="button" name="3"
+                                                    value="3" onclick="off();">X</button>
+                                            </div>
+
+                                            <div id="shop3"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="col-12 shopcake" id="a0419">
+                                            <div style="text-align: right;">
+                                                <button class="btn btn-dark " id="shopoff" type="button" name="2"
+                                                    value="4" onclick="off();">X</button>
+                                            </div>
+
+                                            <div id="shop4"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="col-12 shopcake" id="a0419">
+                                            <div style="text-align: right;">
+                                                <button class="btn btn-dark " id="shopoff" type="button" name="2"
+                                                    value="5" onclick="off();">X</button> </div>
+
+                                            <div id="shop5"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="nav-footer ">
+                            <div class="row">
+                                <div class="col-8 p-0">
+                                    <p class=" m-0">總金額<span id="money"></span></p>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <button type="button" class="btn btn-dark">送出</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="navbar-toggler navshop " type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup-1" aria-controls="navbarNavAltMarkup-1" aria-expanded="false"
+                    aria-label="Toggle navigation" id="aaaa">
+                    <img src="img/素材/shop.png" width="100%" height="100%">
+                </button>
+            </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="banner">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/素材/0105.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/素材/4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/素材/0107.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
     </div>
-    <nav id="nav">
-        <ul>
-            <li id="gotop">
-                <a href="#top"><img src="img/0107-1.png"></a>
-            </li>
-            <li class="shop">
-                <button onclick='showalert11();'><img src="img/shop.png">
-            </li>
-            <li id="go4" class="li"><a href="#">聯絡我們</a></li>
-            <li id="go3" class="li"><a href="#">體驗活動</a></li>
-            <li id="go2" class="li"><a href="#">產品介紹 </a></li>
 
-            <li id="go1" class="li"><a href="#">關於我們  </a></li>
+    <div class="shopping w3-modal" id="id01">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal"> <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">×</span>
+                <h2><img src="img/0107-1.png" height="100px"></h2>
+            </header>
+            <div class="w3-container w3-main">
 
-        </ul>
-    </nav>
-
-    <!-- a1 -->
-
-    <div class="main">
-        <div class="main-0" style="width: 100%;height:100vh;">
-            <div class="白色遮罩 wow fadeIn">
-                <p>
-                    <img src="img/logo11.png" style="z-index: 20" width="200" height="200" class="logopng wow fadeInUp" data-wow-delay="1s" data-wow-offset:="10">
-
-                </p>
-
-            </div>
-
-        </div>
-        <div class="main-1">
-            <div class="a1" style="width:100%;height: 100vh;">
-                <div class="row a3">
-                    <div class="col-6 wow fadeIn left"><img src="img/素材/main1-3.png"></div>
-                    <div class="col-6 a4 wow fadeIn" data-wow-delay="0.8s">
-                        <h2 class="fadeInUp">ABOUT ErBe</h2> 我們是在蘆洲的一家麵包店
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-2 mainb">
-            <div style="width:100%;height:auto;">
-                <div class="col-12 title wow fadeIn">
-                    <p>產品介紹</p>
-                </div>
-                <div class="row ">
-                    <div class="col-xl-7 col-lg-12 col-sm-12  col-xs-12 ">
-
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake ">
-                            <img src="img/去背/cake2.png">
-
-                            <h2>冰淇淋蛋糕</h2>
-                            <h3>$350</h3>
-                            <form id="form1" name="form1">
-
-                                <select name="m1" class="col-12">
-
-                                    <option value="350" selected>8吋$350</option>
-
-                                    <option value="450">10吋$450</option>
-
-                                    <option value="550">12吋$550</option>
-
-                                </select>
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert1();'>
-                            </form>
-
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/cake3.png">
-
-                            <h2>黑森林</h2>
-                            <h3>$350</h3>
-                            <form id="form2" name="form2">
-
-                                <select name="m2" class="col-12">
-
-                                    <option value="350">8吋$350</option>
-
-                                    <option value="450" selected>10吋$450</option>
-
-                                    <option value="550">12吋$550</option>
-
-                                </select>
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert2();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/cake6.png">
-
-                            <h2>水果安娜</h2>
-                            <h3>$350</h3>
-
-                            <form id="form3" name="form3">
-
-                                <select name="m3" class="col-12">
-
-                                    <option value="350">8吋$350</option>
-
-                                    <option value="450">10吋$450</option>
-
-                                    <option value="550" selected>12吋$550</option>
-
-                                </select>
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert3();'>
-                            </form>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點4.png">
-
-                            <h2>元寶</h2>
-                            <h3>$30</h3>
-                            <form id="form4" name="form4">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m4" id="m4" class="col-6" value="1">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert4();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點5.png">
-
-                            <h2>丹麥熱狗</h2>
-                            <h3>$30</h3>
-                            <form id="form5" name="form5">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m5" id="m5" class="col-6" value="1">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert5();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點6.png">
-
-                            <h2>小泡芙</h2>
-                            <h3>$30</h3>
-                            <form id="form6" name="form6">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m6" id="m6" class="col-6" value="1">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert6();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點1.png">
-
-                            <h2>綠豆酥</h2>
-                            <h3>$40</h3>
-                            <form id="form7" name="form7">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m7" id="m7" value="1" class="col-6">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert7();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點2.png">
-
-                            <h2>烏豆沙蛋黃酥</h2>
-                            <h3>$40</h3>
-                            <form id="form8" name="form8">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m8" id="m8" value="1" class="col-6">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert8();'>
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-sm-12  col-xs-12 cake">
-                            <img src="img/去背/糕點3.png">
-
-                            <h2>土鳳梨酥</h2>
-                            <h3>$40</h3>
-                            <form id="form9" name="form9">
-                                <p class="col-6">數量</p>
-                                <input type="text" name="m9" value="1" id="m9" class="col-6">
-                                <input type='button' name='submit' value='加入購物車' onclick='showalert9();'>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="col-xl-4 col-lg-12 col-sm-12  col-xs-12 right ">
-                        <div id="a0106" class="a0106">
-                        </div>
-                        <br>
-
-                        <div class="do">
-                            是否使用折價券
-                            <br>
-                            <form id="mm" name="mm">
-
-                                <select name="discount" class="col-12">
-
-                                    <option value="8">使用8折折價券</option>
-
-                                    <option value="9">使用9折折價券</option>
-                                    <option value="10">不使用折價券</option>
-
-                                </select>
-                        </div>
-
-                        <input type='button' name='submit' value='結算' onclick='showalert10();'>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="main-3 mainb">
-            <div style="width:100%;height: auto;">
-                <div class="col-12 title">
-                    <p>體驗活動</p>
-                </div>
-                <form class="row" id="form10" name="form10">
-                    <div class="col-4">
-                        <div class="col-12">
-                            <h2>名字</h2>
-                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
-                        </div>
-                        <div class="col-12">
-                            <h2>電話</h2>
-                            <input type="text" id="phone" name="phone" required placeholder="請填入您的電話號碼">
-                        </div>
-                        <div class="col-12">
-                            <h2>信箱</h2>
-                            <input type="email" id="email" name="email" required placeholder="請填入您的電子郵件">
-                        </div>
-                        <div class="col-6 do">
-                            <h2>活動</h2>
-                            <input type="radio" value="docake" id="docake" name="do1" checked required>做蛋糕
-                            <br>
-                            <input type="radio" value="dobread" id="dobread" name="do1" required>烤麵包
-                            <br>
-                            <input type="radio" value="dotoast" id="dotoast" name="do1" required>烤吐司
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-8 right">
-                        <div class="h1 col-4">
-                            <img src="img/素材/0108-1.jpg">
-                            <a href="javascript:void(0);">
-                                <div class="h2">
-                                    <p>做蛋糕</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="h1 col-4">
-                            <img src="img/素材/14.jpg">
-                            <a href="javascript:void(0);">
-                                <div class="h2">
-                                    <p>烤麵包</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="h1 col-4">
-                            <img src="img/素材/8.jpg">
-                            <a href="javascript:void(0);">
-                                <div class="h2">
-                                    <p>烤土司</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div align="center" class="col-12">
-                        <button class="col-8" type="submit" onclick='b1();'>送出</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-        <div class="main-4 mainb">
-            <div style="width:100%;height: auto;">
-                <div class="col-12 title">
-                    <p>聯絡我們</p>
-                </div>
-                <form class="row" id="form40" name="form40">
-                    <div class="col-6">
-                        <div class="col-12">
-                            <h2>名字</h2>
-                            <input type="text" id="name" name="name" placeholder="請填入您的名字" required>
-                        </div>
-                        <div class="col-12">
-                            <h2>電話</h2>
-                            <input type="text" id="phone" name="phone" required placeholder="請填入您的電話號碼">
-                        </div>
-                        <div class="col-12">
-                            <h2>信箱</h2>
-                            <input type="email" id="email" name="email" required="" placeholder="請填入您的電子郵件">
-                        </div>
-                         <div class="col-12">
-                            <h2>留下你的話</h2>
-                            <textarea cols="50" rows="5" style="width: 100%">
-　輸入你想要寫的內容...
-</textarea>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        
-                    </div>
-                    <div align="center" class="col-12" style="padding-top: 50px;">
-                        <button class="col-8" type="submit" onclick='b1();'>送出</button>
-                    </div>
-
-                </form>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="row">
-            <div class="col-4 left">
-                <h1>聯絡資訊</h1>
-                <p><img src="img/素材/b2.png"> 地址 / 新北市蘆洲區長安街189號</p>
-
-                <p> <img src="img/素材/b5.png"> 電話 / 02-2288-2423</p>
-
-                <p><img src="img/素材/b1.png"> 時間 / 09:00–23:00</p>
+    <section>
+        <div class="container">
+            <div class="row title justify-content-center pt-3">
+                <h1 class="mt-3">| 關於我們　About Us</h1>
             </div>
-            <div class="col-4" style="color: #000">
-                <h1>快速導覽</h1>
-                <p id="top1"><a href="#">關於我們</a></p>
-                <p id="top2"><a href="#">產品介紹</a></p>
-                <p id="top3"><a href="#">體驗活動</a></p>
-                <p id="top4"><a href="#">聯絡我們</a></p>
+            <div class="row">
+                <div class="col-md-6"><img src="img/門牌.jpg" width="100%" height="100%"></div>
+                <div class="col-md-6 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi praesentium
+                    veniam, delectus similique a ut laborum blanditiis ipsa recusandae eos illo quaerat ducimus amet eum
+                    qui sed eveniet dolore dolor. </div>
             </div>
-            <div class="col-4">
-                <h1>地圖</h1>
-                <iframe width='100%' height='250px' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=247新北市蘆洲區長安街189號號&z=16&output=embed&t='></iframe>
+
+            <div class="row title justify-content-center pt-3">
+                <h1 class="mt-3">| 最新消息　Most News</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr class="thead-dark">
+                                <th scope="col">日期</th>
+                                <th scope="col">公告</th>
+                                <th scope="col">觀看人數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">2020/04/20</th>
+                                <td>母親節蛋糕預購</td>
+                                <td>638</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2020/04/01</th>
+                                <td>Jacob</td>
+                                <td>721</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2020/03/27</th>
+                                <td>Larry</td>
+                                <td>1,032</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2020/03/25</th>
+                                <td>Mark</td>
+                                <td>662</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2020/03/11</th>
+                                <td>Jacob</td>
+                                <td>328</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2020/02/10</th>
+                                <td>Larry</td>
+                                <td>1,375</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row title justify-content-center pt-3">
+                <h1 class="mt-3">| 客製蛋糕　 Products</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6  ">
+                    <div class="cake wow">
+                        <img src="img/0412.png" style="position: absolute;top: -100px;left: 50px">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+
+                <div class="col-md-6">
+                    幾驚 有現真多好。學愛故 往法提就一遊 當之。覺原評母，得做且腳不葉一，的期新表,以
+                </div>
+                <div class="col-md-6">
+                    <div class="cake wow">
+
+                        <img src="img/0412-1.png" style="position: absolute;top: -100px;left: 50px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row title justify-content-center pt-3">
+                <h1 class="mt-3">| 蛋糕菜單　 Products</h1>
+            </div>
+            <div class="row ">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">完整菜單</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">蛋糕</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">糕點</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                            role="tab" aria-controls="v-pills-settings" aria-selected="false">客製蛋糕</a>
+                    </div>
+                </div>
+                <div class="col-9" style="background-color: cadetblue;">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <div class="card-deck">
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/1.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container " style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body p-4">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <div class="card-text "> <span
+                                                        class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span><br>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <p class="my-2">尺寸</p>
+                                                    <select class="w-100">
+                                                        <option>6</option>
+                                                        <option>8</option>
+                                                        <option>10</option>
+                                                        <option>12</option>
+
+
+                                                    </select>
+                                                </div>
+                                                <p class="my-2">價格 $</p>
+                                                <span id="money"></span>
+
+
+                                            </div>
+                                        </div> <a class="btn  btn-outline-info w-100 border-0 "
+                                            style="border-radius: 0px;" onclick="showalert1();">加入購物車</a>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/2.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container" style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <span class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn  btn-outline-info w-100 border-0 " style="border-radius: 0px;"
+                                            onclick="showalert2();">加入購物車</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/7.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container" style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <span class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn  btn-outline-info w-100 border-0 " style="border-radius: 0px;"
+                                            onclick="showalert3();">加入購物車</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/4.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container" style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <span class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn  btn-outline-info w-100 border-0 " style="border-radius: 0px;"
+                                            onclick="showalert4();">加入購物車</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/5.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container" style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <span class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn  btn-outline-info w-100 border-0 " style="border-radius: 0px;"
+                                            onclick="showalert5();">加入購物車</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 my-3">
+                                    <div class="card border-0">
+                                        <img src="img/6.png" class="card-img-top" alt="...">
+
+                                        <div class="card-container" style="background-color: rgb(200, 200, 200);">
+                                            <div class="card-body">
+                                                <h5 class="card-title">冰淇淋蛋糕</h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Doloribus rerum asperiores iste quibusdam eos.<br>
+
+                                                    <span class="badge badge-warning m-2">蛋奶素</span>
+                                                    <span class="badge badge-dark m-2">巧克力</span>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn  btn-outline-info w-100 border-0 " style="border-radius: 0px;"
+                                            onclick="showalert6();">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing
+                            elit. Ratione non quas similique reprehenderit perferendis, natus,
+                            cum odio tempora quae
+                            commodi alias! Fugiat repellendus consectetur voluptate dicta
+                            aperiam nihil cum
+                            necessitatibus!</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            >Lorem ipsum dolor sit amet
+                            consectetur adipisicing
+                            elit. Ratione non quas similique reprehenderit perferendis, natus,
+                            cum odio tempora quae
+                            commodi alias! Fugiat repellendus consectetur voluptate dicta
+                            aperiam nihil cum
+                            necessitatibus!</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            >Lorem ipsum dolor sit amet
+                            consectetur adipisicing
+                            elit. Ratione non quas similique reprehenderit perferendis, natus,
+                            cum odio tempora quae
+                            commodi alias! Fugiat repellendus consectetur voluptate dicta
+                            aperiam nihil cum
+                            necessitatibus!</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 300) {
+                $('nav').addClass('navbg');
+
+            } else {
+                $('nav').removeClass('navbg');
+
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/shop.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+
 </body>
 
 </html>

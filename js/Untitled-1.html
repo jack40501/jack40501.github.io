@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <input type="button" value="点击" onclick="checkRigh()" />
+    已点次数：
+    <span id="dianjicishu"></span>
+</body>
+<script>
+    var x = 0;
+    function checkRigh() {
+        x += 1;
+        document.getElementById('dianjicishu').innerHTML = x;
+    }
+</script>
+
+</html>
