@@ -8,11 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/css0607.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
+
+    <script type="text/javascript" src="js/wow.js"></script>
 
     <script>
         new WOW().init();
     </script>
-    <script type="text/javascript" src="js/wow.js"></script>
     <style>
 
     </style>
@@ -23,27 +27,51 @@
     <header>
         <nav class="navbg">
             <div class="navlogoimg">
-                <a href="#s0"><img src="img/0107-1.png" /></a>
+                <a href="#s0"><img src="img/0107-1.png"></a>
             </div>
-            <div class="nav-a">
-                <li>
-                    <a href="#s1">關於我們</a></li>
-                <li><a href="#s2">最新消息</a></li>
-                <li><a href="#s3">客製產品</a></li>
-                <li><a href="#s4">菜單資訊</a></li>
-                <button><img src="img/素材/shop.png" width="100%" height="100%" /></button>
 
-            </div>
-            <div class="toggle"><a>
-                    <img src="img/logo.png" width="50px"> </a>
-            </div>
+
         </nav>
     </header>
+    <div class="togglenav">
+        <div class="toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
+    </div>
+    <div class="togglenav-2 nav-a">
+        <div>
+            <li><a href="#s1">關於我們</a></li>
+            <li><a href="#s2">最新消息</a></li>
+            <li><a href="#s3">菜單資訊</a></li>
+            <li><a href="#s4">聯絡我們</a></li>
+            <li id="navbtn"><a href="#">購物車</a></li>
+        </div>
+    </div>
+
+    <div id="cart" class="cart">
+        <div>
+            <div class="cart-1">
+                <p>購物車 <button class="cartoff">X</button></p>
+
+
+            </div>
+            <div class="cart-2" id="cart-2"></div>
+            <div class="cart-3 row  justify-content-center"><input class='col-10' type='submit' value='購買' id='submit'>
+            </div>
+
+        </div>
+    </div>
     <banner id="s0">
         <div class="a0">
             <section class="bg">
                 <img src="封面-1.png">
+                <img src="封面-2.png">
+
             </section>
             <section class="bg-2">
                 <img src="封面-3.png">
@@ -52,152 +80,541 @@
             </section>
             <div class="bbg">
                 <div>
-                    <img src="4.jpg" alt="pure css3 slider" />
-                    <span class="info">Image Description 1</span>
+                    <img src="4.png" alt="pure css3 slider" />
                 </div>
                 <div>
-                    <img src="6.jpg" alt="pure css3 slider" />
-                    <span class="info">Image Description 2</span>
+                    <img src="6.png" alt="pure css3 slider" />
                 </div>
                 <div>
-                    <img src="8.jpg" alt="pure css3 slider" />
-                    <span class="info">Image Description 3</span>
+                    <img src="8.png" alt="pure css3 slider" />
                 </div>
             </div>
         </div>
     </banner>
-    <div class="contaner">
+    <div>
         <section id="s1">
 
-            <div class="s1-content">
-                <div class="col-4  ">
-                    <div class="bgleft  ">
-                        <div class="row title justify-content-center ">
-                            <h1 class="wow animated fadeInUp"> | 關於我們　About Us</h1>
+            <div class="container">
+
+
+                <div class="row title justify-content-center ">
+                    <h1 class="wow animated fadeInUp"> | 關於我們　About Us</h1>
+                </div>
+                <div class="row About ">
+                    <div class="col-12 Aboutp">
+                        我們是亞比法式蛋糕是一家在蘆洲10幾年的蛋糕店，也是一間家喻戶曉的蛋糕店，凡是訂購蛋糕的客人都讚不絕口，店內的蛋糕、麵包都是早上現做出爐，再依照客人需求客製化獨一無二的蛋糕。
+                        新鮮現做、蛋糕綿密、夾層口味眾多，更以芋泥配布丁深受消費者喜愛
+                    </div>
+
+                    <div class="col-12 Abouticon ">
+
+                        <div class="col-md-4 wow animated fadeInUp delay-1s">
+                            <div class="col-6 offset-4">
+                            </div>
+                            <div class="col-12">
+                                <h3>客製蛋糕</h3>
+                                <p>本店提供客製蛋糕的服務，提前預約讓我們幫你做獨一無二的蛋糕吧。</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 wow animated fadeInUp delay-2s">
+                            <div class="col-6 offset-4"></div>
+                            <div class="col-12">
+                                <h3>外送服務</h3>
+                                <P>凡購買商品超過300元，即可免費送大台北地區，其他縣市可免外送費用。</P>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 wow animated fadeInUp delay-3s">
+                            <div class="col-6 offset-4 "></div>
+                            <div class="col-12">
+                                <h3>好評不斷</h3>
+                                <p>本店在蘆洲經營數10年，各項產品好評不斷，讓你吃到美味的產品。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-8"></div>
+        </section>
+
+        <section id="s2">
+            <div class="container">
+                <div class="row title justify-content-center ">
+                    <h1 class="wow animated fadeInUp"> | 最新消息　News</h1>
+                </div>
+                <table>
+                    <tr>
+                        <th>日期</th>
+                        <th>公告</th>
+                        <th>觀看人數</th>
+                    </tr>
+                    <tr>
+                        <td>2020/06/10</td>
+                        <td><a name="Moon" href="" value="活動時間：2020/06/21" alt="2020/06/21當日到本店購買月餅系列商品，享九折優惠"
+                                title="鬥陣看日蝕，作伙吃甜食。">鬥陣看日蝕，作伙吃甜食</a></td>
+                        <td>621</td>
+                    </tr>
+                    <tr>
+                        <td>2020/04/27</td>
+                        <td><a name="Mon" href="" value="活動時間：2020/04/27~2020/05/20"
+                                alt="2020/04/27~2020/05/20到本店購買全系列蛋糕，享八折優惠！"
+                                title="我愛媽咪，全系列蛋糕預購享優惠8折!">我愛媽咪，全系列蛋糕預購享優惠八折!</a></td>
+                        <td>520</td>
+                    </tr>
+                    <tr>
+                        <td>2020/02/10</td>
+                        <td><a name="Love" href="" value="活動時間：2020/02/07~2020/03/16"
+                                alt="2020/02/07~2020/03/16到本店購買巧克力、草莓系列商品，享九折優惠！"
+                                title="真愛永恆，巧克力、草莓系列商品享9折優惠!">真愛永恆，巧克力、草莓系列商品享九折優惠!</a></td>
+                        <td>1314</td>
+                    </tr>
+                    <tr>
+                        <td>2020/01/01</td>
+                        <td>新年期間，全店公休除夕(0124)到初五(01/29)</td>
+                        <td>2020</td>
+                    </tr>
+                </table>
+                <div id="new" class="row"></div>
             </div>
         </section>
 
-        <section id="s2" style="height: 100vh;">
 
-        </section>
         <section id="s3">
-            <div class="row title justify-content-center pt-3">
-                <h1 class="mt-3">| 客製蛋糕　 Products</h1>
-            </div>
-        </section>
 
-        <section id="s4" class="container">
-            <div class="row title justify-content-center pt-3">
-                <h1 class="mt-3">| 蛋糕菜單　Menu</h1>
+            <div class="row title justify-content-center ">
+                <h1 class="wow animated fadeInUp"> | 菜單資訊　Menu</h1>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-12">
-                        <button value="all">全部</button>
-                        <button value="cake">蛋糕</button>
-                        <button value="pastry">糕點</button>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="col-md-12 btnclick">
+                            <button value="all"><i class="fa fa-bars"></i>&nbsp;全部</button>
+                            <button value="cake"><i class="fa fa-birthday-cake  "></i>&nbsp;蛋糕</button>
+                            <button value="pastry"><i class="fa  fa-bread-slice"></i>&nbsp;糕點</button>
+                            <button value="cream"><i class="fa fa-tint"></i>&nbsp;奶油</button>
+                            <button value="chocolate"><i class="fab fa-mix"></i>&nbsp;巧克力</button>
+                            <button value="fruit"><i class="fa fa-apple-alt"></i>&nbsp;水果</button>
+                            <button value="ice"><i class="fa fa-ice-cream"></i>&nbsp;冰淇淋蛋糕</button>
+                            <button value="mooncake"><i class="fa fa-cookie"></i>&nbsp;月餅</button>
 
-                        <button value="custom">客製蛋糕</button>
-                        <button value="cream">奶油</button>
-                        <button value="chocolate">巧克力</button>
-                        <button value="fruit">水果</button>
-                        <button value="ice">冰淇淋蛋糕</button>
-                        <button value="mooncake">月餅</button>
-                        <button value="mooncake">月餅</button>
+                        </div>
+                        <div id="Products" class="Products row justify-content-center align-items-center">
+                            <div class="menu-card cream chocolate fruit cake col-md-3 p-0 ">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="莓好世界" content="香甜誘人的草莓，配上濃郁的巧克力碎片，就像在莓好世界當中" value="450"
+                                        contain="草莓、巧克力碎片、奶油、布丁內餡、芋泥內餡">
+                                        <img src=" img/去背/1.png" alt="READ MORE" name="1" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：莓好世界</h4>
+                                    <h4>價格：<span id="money">450</span></h4>
+
+
+                                </div>
+                            </div>
+
+                            <div class=" menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="初戀" content="初戀就像巧克力，甜甜的，把這份情意送給你愛的人吧" value="450"
+                                        contain="綜合水果、巧克力奶油、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/2.png" alt="READ MORE" name="2" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：初戀</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream  fruit cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="不能莓有你" content="當我們第一次相見，從未想過你對我如此重要，讓我知道不能莓有你" value="500"
+                                        contain="草莓、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/3.png" alt="READ MORE" name="3" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：不能梅有你</h4>
+
+                                    <h4>價格：<span id="money">500</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="相戀" content="夏日首選，香甜可口，冰淇淋蛋糕" value="450">
+                                        <img src="img/去背/4.png" alt="READ MORE" name="4" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：相戀</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="心心相印" content="心心相印就是媽媽那一步兩步，小心翼翼又殫精竭慮，向我靠近的心意" value="450"
+                                        contain="綜合水果、巧克力奶油、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/6.png" alt="READ MORE" name="6" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：心心相印</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream  cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="粉紅甜心" content="香甜的奶油，搭上濃郁的草莓粉，讓你嘴甜心也甜" value="450"
+                                        contain="綜合水果、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/7.png" alt="READ MORE" name="7" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：粉紅甜心</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="媽媽的臉" content="媽媽只要兒女們平平安安，就能催開母親的那張日夜牽掛的笑臉!" value="450"
+                                        contain="綜合水果、巧克力奶油、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/8.png" alt="READ MORE" name="8" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：媽媽的臉</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="紫羅蘭" content="在夢境中愛上你，對我而言你永遠那麼美。" value="450"
+                                        contain="綜合水果、奶油、布丁內餡、芋泥內餡">
+                                        <img src="img/去背/9.png" alt="READ MORE" name="9" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：紫羅蘭</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream cake ice col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="冰淇淋蛋糕" content="由芋頭、草莓、香草紅豆冰組成的冰淇淋蛋糕是你的夏日最佳選擇" value="450"
+                                        contain="綜合水果、奶油、芋頭冰淇淋、草莓冰淇淋、香草紅豆冰淇淋">
+                                        <img src="img/去背/10.png" alt="READ MORE" name="10" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：冰淇淋蛋糕</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="黑森林" content="滿滿的巧克力，配上酸酸的櫻桃，是你生日最佳首選" value="450"
+                                        contain="綜合水果、巧克力碎片、奶油">
+                                        <img src="img/去背/11.png" alt="READ MORE" name="11" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：黑森林</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="龍" content="濃郁的巧克力，配上上方的神龍，讓你成為龍的傳人" value="450"
+                                        contain="綜合水果、巧克力奶油、奶油">
+                                        <img src="img/去背/12.png" alt="READ MORE" name="12" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：龍</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream cake ice chocolate col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="冰淇淋蛋糕(杯)" content="夏日首選，香甜可口的冰淇淋蛋糕，讓你一杯一杯接著吃" value="450"
+                                        contain="綜合水果、奶油、布丁.芋頭.草莓.瑞士巧克力.抹茶紅豆隨機9杯">
+                                        <img src="img/去背/13.png" alt="READ MORE" name="13" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：冰淇淋蛋糕(杯)</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+
+                            <div class="menu-card cream cake col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="水果安娜" content="清爽的水果，濃醇的奶油，仿佛處在夏威夷" value="450"
+                                        contain="綜合水果、奶油">
+                                        <img src="img/去背/14.png" alt="READ MORE" name="14" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：水果安娜</h4>
+
+                                    <h4>價格：<span id="money">450</span></h4>
+                                </div>
+                            </div>
+
+                            <div class="menu-card mooncake pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="綠豆椪" content="甜甜的綠豆泥，紮實的口感，是你中秋佳節送禮最佳選擇" value="40"
+                                        contain="綠豆甜餡">
+                                        <img src="img/去背/16.png" alt="READ MORE" name="16" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：綠豆椪</h4>
+
+                                    <h4>價格：<span id="money">40</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card mooncake pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="烏豆沙蛋黃酥" content="相思的紅豆，配上鹹鹹的蛋黃，是你中秋佳節最佳選擇" value="45"
+                                        contain="紅豆餡、芝麻、蛋黃">
+                                        <img src="img/去背/17.png" alt="READ MORE" name="17" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：烏豆沙蛋黃酥</h4>
+
+                                    <h4>價格：<span id="money">45</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card mooncake pastry fruit col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="土鳳梨酥" content="酥脆餅皮，包裹住香濃鳳梨餡，讓你欲罷不能" value="40" contain="土鳳梨餡">
+                                        <img src="img/去背/18.png" alt="READ MORE" name="18" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：土鳳梨酥</h4>
+
+                                    <h4>價格：<span id="money">40</span></h4>
+                                </div>
+                            </div>
+
+                            <div class="menu-card pastry  chocolate cream col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="元寶" content="鬆軟的外皮，包住冰涼的內餡，讓你一個接一個" value="30"
+                                        contain="芋泥內餡、巧克力內餡">
+                                        <img src="img/去背/19.png" alt="READ MORE" name="19" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：元寶</h4>
+
+                                    <h4>價格：<span id="money">30</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card cream chocolate pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="小泡芙" content="酥軟的皮，配上滿滿的奶油餡，讓你每一口都能甜滋滋" value="40"
+                                        contain="奶油內餡、巧克力內餡">
+                                        <img src="img/去背/21.png" alt="READ MORE" name="21" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：小泡芙</h4>
+
+                                    <h4>價格：<span id="money">40</span></h4>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-card cream fruit pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="水果塔" content="清爽的水果，配上酥脆塔皮，淋上香甜的奶油，讓你回味無窮" value="30"
+                                        contain="各種水果、奶油">
+                                        <img src="img/去背/23.png" alt="READ MORE" name="23" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：水果塔</h4>
+
+                                    <h4>價格：<span id="money">40</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card mooncake  pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="芋泥蛋黃酥" content="濃郁的芋泥，配上鹹鹹的蛋黃，讓你每一口都能口齒留香" value="50"
+                                        contain="芋泥、蛋黃">
+                                        <img src="img/去背/24.png" alt="READ MORE" name="24" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：芋泥蛋黃酥</h4>
+
+                                    <h4>價格：<span id="money">50</span></h4>
+                                </div>
+                            </div>
+                            <div class="menu-card mooncake  pastry col-md-3 p-0">
+                                <div class="menu-card-1">
+
+                                    <a href="#" title="綠豆沙蛋黃酥" content="甜甜的綠豆餡，配上鹹鹹的蛋黃，鹹甜鹹甜的新滋味" value="50"
+                                        contain="綠豆甜餡、蛋黃">
+                                        <img src="img/去背/25.png" alt="READ MORE" name="25" />
+
+                                    </a>
+                                </div>
+                                <div class="menu-card-2">
+                                    <h4>品名：綠豆沙蛋黃酥</h4>
+
+                                    <h4>價格：<span id="money">50</span></h4>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
-                    <div id="Products">
-                        <div class="menu-card cream chocolate col-3 p-0">
-                            <div class="menu-card-1">
+                </div>
+            </div>
+        </section>
+        <section id="s4">
 
-                                <a href="#">
-                                    <img src="img/1.png" alt="READ MORE" />
+            <div class="row title justify-content-center ">
+                <h1 class="wow animated fadeInUp"> | 聯絡我們　
+                    Contact Us</h1>
+            </div>
+            <div class="container">
 
-                                </a>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 ">
+                        <div class="s4card">
+                            <div class="imgcard">
+                                <img src="img/素材/8.jpg" alt="">
                             </div>
-                            <div class="menu-card-2">
-                                <h3>品名</h3>
-                                <h3>價格</h3>
-                                <button>加入購物車</button>
-                            </div>
-                        </div>
-                        <div class="menu-card cream chocolate col-3 p-0">
-                            <div class="menu-card-1">
-
-                                <a href="#">
-                                    <img src="img/2.png" alt="READ MORE" />
-
-                                </a>
-                            </div>
-                            <div class="menu-card-2">
-                                <h3>品名</h3>
-                                <h3>價格</h3>
-                                <button>加入購物車</button>
+                            <div class="content">
+                                <h3>動手做吐司</h3>
+                                <h5>價格：150元</h5>
+                                <p>想自己親自做一條香噴噴的吐司嗎?來參加活動吧!</p>
+                                <button>活動報名</button>
                             </div>
                         </div>
-                        <div class="menu-card cream chocolate col-3 p-0">
-                            <div class="menu-card-1">
-
-                                <a href="#">
-                                    <img src="img/3.png" alt="READ MORE" />
-
-                                </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="s4card">
+                            <div class="imgcard">
+                                <img src="img/素材/14.jpg" alt="">
                             </div>
-                            <div class="menu-card-2">
-                                <h3>品名</h3>
-                                <h3>價格</h3>
-                                <button>加入購物車</button>
-                            </div>
-                        </div>
-                        <div class="menu-card cream chocolate col-3 p-0">
-                            <div class="menu-card-1">
-
-                                <a href="#">
-                                    <img src="img/4.png" alt="READ MORE" />
-
-                                </a>
-                            </div>
-                            <div class="menu-card-2">
-                                <h3>品名</h3>
-                                <h3>價格</h3>
-                                <button>加入購物車</button>
+                            <div class="content">
+                                <h3>動手做麵包</h3>
+                                <h5>價格：130元</h5>
+                                <p>想自己親自做屬於自己口味的麵包嗎?來參加活動吧!</p>
+                                <button>活動報名</button>
                             </div>
                         </div>
-                        <div class="menu-card cream chocolate col-3 p-0">
-                            <div class="menu-card-1">
-
-                                <a href="#">
-                                    <img src="img/5.png" alt="READ MORE" />
-
-                                </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="s4card">
+                            <div class="imgcard">
+                                <img src="img/素材/0105.jpg" alt="">
                             </div>
-                            <div class="menu-card-2">
-                                <h3>品名</h3>
-                                <h3>價格</h3>
-                                <button>加入購物車</button>
+                            <div class="content">
+                                <h3>動手做蛋糕</h3>
+                                <h5>價格：180元</h5>
+                                <p>想自己親自做一個美味的蛋糕嗎?來參加活動吧!</p>
+                                <button>活動報名</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
-    </div><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="shop1"></div>
+        <footer>
+            <div class="row">
+                <div class="col-3">
+                    <div valign="center">
+                        <li>地址：新北市蘆洲區長安街189號</li>
+                        <li>電話：(02)2288-2423</li>
+                        <li>營業時間：7：00~23：00</li>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div style="height:70%;"><img src="img/logo全.png" alt="" width="100%" height="100%"></div>
+                    <div style="height:30%;">
+                        <a href="https：//reurl.cc/kdYQKG">
+                            <img src="img/素材/b4.png" width="60px" height="60px">
+                        </a>
+                        <a href="">
+                            <img src="img/素材/b3.png" width="60px" height="60px">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="login"></div>
+    <div id="shop1" class="row"></div>
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/shop.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
 </body>
 
 </html>
